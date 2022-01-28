@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Design</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    />
+    <link rel="stylesheet" href="./palasio-design.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+      
+    <header class="card-with-shadow header-desktop">
+      <nav>
+        <ul>
+            <li><div class="brand-logo">
+            <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+            ><i class="fas fa-angle-right"></i>
+          </div></li>
+          <li class="active-page"><a href="/">Home</a></li>
+          <li><a href="./documentation.html">Documentation</a></li>
+        </ul>
+      </nav>
+      
+      <div class="theme-toggle">
+        <input type="checkbox" class="theme-toggle__checkbox" id="theme-toggle"/>
+        <label class="theme-toggle__label" for="theme-toggle">
+           <span> <i class="fas fa-moon"></i></span>
+           <span> <i class='fas fa-sun'></i></span>
+            <span class='ball'></span>
+        </label>
+        </div>
+    </header>
+
+    <main class="main-section">
+      <section class="main-section__left">
+        <img
+          class="card-with-shadow img-responsive"
+          src="Assets/stil-b4DtZhxJjPM-unsplash.jpg"
+          loading="lazy"
+          alt="sample"
+        />
+      </section>
+      <section class="main-section__right">
+        <div class="brand">
+          <div>
+            <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+            ><i class="fas fa-angle-right"></i>
+          </div>
+          <div class="brand-name">palasio designs</div>
+        </div>
+        <div class="hr-line"></div>
+        <p>
+         Build Beautiful Websites, with Intriguing UI elements! 
+Your component library is here! User-friendly and Surprising Easy.  
+Customizable! Just Copy and paste the components with one click. 
+Less time in Designing and More on code logic that works.
+        </p>
+        <span><i class="fas fa-water"></i></span>
+      </section>
+    </main>
+    <footer class="footer">
+      <h1 class="slogan">Make an impact and create something awesome.</h1>
+      <div class="black-bg-theme hr-line"></div>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <span class="icon icon-small"
+              ><i id="icon" class="fab fa-github"></i
+            ></span>
+          </li>
+          <li>
+            <span class="icon icon-small"
+              ><i id="icon" class="fab fa-twitter"></i
+            ></span>
+          </li>
+          <li>
+            <span class="icon icon-small"
+              ><i id="icon" class="fab fa-linkedin-in"></i
+            ></span>
+          </li>
+        </ul>
+      </div>
+      <div class="promotion">
+        Made with <i class="fas fa-heart"></i> by Rahul Yadav
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.documentation-section {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  margin: 3rem auto;
+}
+.documentation-section__aside {
+  background: var(--off-white-color);
+  overflow-y: scroll;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+.documentation-section__aside::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in all webkit based browser */
+}
+
+.dark-theme .documentation-section__aside {
+  background: var(--black-color);
+}
+.documentation-section__aside,
+.documentation-section__main {
+  padding: 2rem;
+  padding-top: 3rem;
+}
+.documentation-section__main h1 {
+  font-size: 3rem;
+}
+.documentation-section__main h2 {
+  font-size: 2.5rem;
+}
+.documentation-section__main h1::first-letter,
+.documentation-section__main h2::first-letter {
+  color: var(--accent-font-color);
+}
+.documentation-section__main section {
+  margin: 1.5rem auto;
+}
+.documentation-section__main section p {
+  margin: 1rem auto;
+}
+.documentation-section__aside ul {
+  list-style: none;
+}
+.documentation-section__aside li {
+  padding-left: 1rem;
+  margin: 1.5rem auto;
+}
+.documentation-section__aside li a {
+  color: var(--grey-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.documentation-section__aside li a:hover,
+.documentation-section__aside li a:active {
+  color: var(--black-color);
+}
+.dark-theme .documentation-section__aside li a:hover,
+.dark-theme .documentation-section__aside li a:active {
+  color: var(--white-color);
+}
+
+.documentation-section__main {
+  width: 80%;
+  margin: auto;
+}
+.container-component {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+.container__live-demo {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.container-avatar__code-snippet {
+  display: none;
+}
+.code-container-avatar__actions {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.code-container-avatar__actions button {
+  display: block;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  border: none;
+  font-size: 1rem;
+  background: var(--primary-color-light);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.code-container-avatar__actions button.active {
+  background: var(--accent-font-color);
+  color: var(--white-color);
+}
