@@ -1,3 +1,6 @@
+@import url('./components/main-style.css');
+@import url('./components/theme.css');
+
 .documentation-section {
   display: grid;
   grid-template-columns: 7fr 3fr;
@@ -32,14 +35,20 @@
 .documentation-section__main h2 {
   font-size: 2.5rem;
 }
-.documentation-section__main h1::first-letter,
-.documentation-section__main h2::first-letter {
-  color: var(--accent-font-color);
+.documentation-section__main h3 {
+  font-size: 1.5rem;
 }
+.documentation-section__main h5.js-heading {
+  margin: 0.5rem auto;
+}
+/* .documentation-section__main h1::first-letter,
+.documentation-section__main h2::first-letter {
+  color: var(--accent-color-primary);
+} */
 .documentation-section__main section {
   margin: 1.5rem auto;
 }
-.documentation-section__main section p {
+.documentation-section__main section p.paragraph {
   margin: 1rem auto;
 }
 .documentation-section__aside ul {
@@ -67,12 +76,12 @@
   width: 80%;
   margin: auto;
 }
-.container-component {
+.component-container {
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem auto;
 }
-.container__live-demo {
+.component-container__live-demo {
   display: flex;
   flex-direction: row;
   padding: 1rem;
@@ -81,16 +90,16 @@
   flex-flow: row wrap;
   gap: 1rem;
 }
-.container-avatar__code-snippet {
+.component-container__code-snippet {
   display: none;
+  padding: 1rem;
 }
-.code-container-avatar__actions {
+.component-container__actions {
   width: 100%;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.code-container-avatar__actions button {
+.component-container__actions button {
   display: block;
   width: 100%;
   outline: none;
@@ -102,7 +111,7 @@
   padding: 0.5rem;
   cursor: pointer;
 }
-.code-container-avatar__actions button.active {
-  background: var(--accent-font-color);
+.component-container__actions button.active {
+  background: var(--accent-color-primary);
   color: var(--white-color);
 }
