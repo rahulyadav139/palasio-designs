@@ -1,29 +1,3 @@
-@import url('./components/main-style.css');
-@import url('./components/theme.css');
-
-.active-page {
-  border-bottom: 2px solid var(--accent-color-primary);
-}
-.header-desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-}
-.header-desktop a:hover {
-  color: var(--accent-color-primary);
-}
-.header-desktop ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.header-desktop .brand-logo {
-  font-size: 1.5rem;
-  color: var(--accent-color-primary);
-}
-
 .main-section {
   margin: 3rem auto;
   display: grid;
@@ -54,76 +28,11 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
-.footer {
-  background: var(--black-color);
-  text-align: center;
-  color: var(--white-color);
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.footer ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: fit-content;
-  margin: auto;
-}
-.footer .promotion .fas {
-  color: red;
-}
-.theme-toggle {
-  position: relative;
-}
-.theme-toggle__checkbox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-}
 
-.theme-toggle__label {
-  padding: 5px;
-  background-color: var(--black-color);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-.theme-toggle__label span:nth-child(1),
-.theme-toggle__label span:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.theme-toggle__label span:last-child {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--white-color);
-  border-radius: 50%;
-  margin: 5px;
-  transition: transform 0.2s linear;
-}
-
-.theme-toggle__checkbox:checked + .theme-toggle__label .ball {
-  transform: translateX(20px);
-}
-
-.fa-moon {
-  color: var(--accent-color-primary);
-}
-
-.fa-sun {
-  color: yellow;
+.img-responsive {
+  object-fit: cover;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 @media only screen and (max-width: 450px) {

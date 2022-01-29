@@ -8,8 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Josefin Sans', sans-serif; */
-
   font-family: 'Nunito Sans', sans-serif;
   scroll-behavior: smooth;
 }
@@ -92,23 +90,4 @@ html {
   html {
     font-size: 62.5%;
   }
-}
-
-/* temp */
-
-.card-with-shadow {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.img-responsive {
-  object-fit: cover;
-  max-inline-size: 100%;
-  block-size: auto;
-}
-.img-round {
-  object-fit: cover;
-  max-inline-size: 100%;
-  block-size: auto;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
 }
