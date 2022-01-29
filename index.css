@@ -1,5 +1,8 @@
+@import url('./components/main-style.css');
+@import url('./components/theme.css');
+
 .active-page {
-  border-bottom: 2px solid var(--accent-font-color);
+  border-bottom: 2px solid var(--accent-color-primary);
 }
 .header-desktop {
   display: flex;
@@ -8,7 +11,7 @@
   padding: 2rem;
 }
 .header-desktop a:hover {
-  color: var(--accent-font-color);
+  color: var(--accent-color-primary);
 }
 .header-desktop ul {
   list-style: none;
@@ -18,7 +21,7 @@
 }
 .header-desktop .brand-logo {
   font-size: 1.5rem;
-  color: var(--accent-font-color);
+  color: var(--accent-color-primary);
 }
 
 .main-section {
@@ -44,7 +47,7 @@
 }
 .main-section__right .brand div:first-child {
   font-size: 2.5rem;
-  color: var(--accent-font-color);
+  color: var(--accent-color-primary);
 }
 .main-section__right .brand div {
   color: var(--secondary-color);
@@ -116,7 +119,7 @@
 }
 
 .fa-moon {
-  color: var(--accent-font-color);
+  color: var(--accent-color-primary);
 }
 
 .fa-sun {
