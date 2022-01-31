@@ -18,19 +18,19 @@
 }
 .avatar-with-image.small,
 .avatar-with-text.small {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .avatar-with-image.medium,
 .avatar-with-text.medium {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
 }
 .avatar-with-image.large,
 .avatar-with-text.large {
-  width: 150px;
-  height: 150px;
+  width: 9.5rem;
+  height: 9.5rem;
 }
 
 /* avatar with text */

@@ -9,21 +9,17 @@
   display: inline-block;
   border: 2px solid var(--white-color);
 }
-.badge-status.top-left {
+.badge-status.top {
   top: 0;
-  left: 0;
 }
-.badge-status.top-right {
-  top: 0;
+.badge-status.right {
   right: 0;
 }
-.badge-status.bottom-left {
-  bottom: 0;
+.badge-status.left {
   left: 0;
 }
-.badge-status.bottom-right {
+.badge-status.bottom {
   bottom: 0;
-  right: 0;
 }
 .small ~ .badge-status {
   width: 15px;
@@ -45,13 +41,13 @@
   border-radius: 50%;
   margin: 10px;
 }
-.badge-status.status-online {
+.badge-status.online {
   background: var(--green-color);
 }
-.badge-status.status-offline {
+.badge-status.offline {
   background: var(--red-color);
 }
-.badge-status.status-away {
+.badge-status.dnd {
   background: var(--yellow-color);
 }
 

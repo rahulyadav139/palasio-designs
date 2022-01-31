@@ -6,6 +6,7 @@
   background: var(--default-color);
   color: var(--white-color);
   border: 1.5px solid var(--default-color);
+  font-size: inherit;
 }
 .btn:hover {
   background: var(--default-color-hover);
@@ -124,7 +125,8 @@
   color: var(--default-color);
   background: var(--white-color);
   line-height: 0;
-  font-size: 1rem;
+  height: 2.33rem;
+  width: 2.33rem;
 }
 .dark-theme .btn.icon-with-text span {
   background: var(--dark-theme-bg-color);
@@ -244,21 +246,17 @@
   margin: 2rem;
   z-index: 15;
 }
-.icon.float.bottom-left {
-  left: 0;
+.icon.float.bottom {
   bottom: 0;
 }
-.icon.float.top-left {
+.icon.float.top {
+  top: 0;
+}
+.icon.float.right {
+  right: 0;
+}
+.icon.float.left {
   left: 0;
-  top: 0;
-}
-.icon.float.bottom-right {
-  bottom: 0;
-  right: 0;
-}
-.icon.float.top-right {
-  top: 0;
-  right: 0;
 }
 
 /* link */
