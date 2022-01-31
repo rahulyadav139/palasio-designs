@@ -21,10 +21,10 @@
 }
 .main-section__right .brand div:first-child {
   font-size: 2.5rem;
-  color: var(--accent-color-primary);
+  color: var(--primary-color-dark);
 }
 .main-section__right .brand div {
-  color: var(--secondary-color);
+  color: var(--primary-color-dark);
   font-size: 1.5rem;
   font-weight: bold;
 }

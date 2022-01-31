@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Designs</title>
+
+    <link rel="stylesheet" href="../../palasio-design.css" />
+    <link rel="stylesheet" href="../../shared.css" />
+    <link rel="stylesheet" href="../../documentation.css" />
+    <script defer src="../../app.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-desktop">
+      <nav>
+        <ul>
+          <li>
+            <div class="brand-logo">
+              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+              ><i class="fas fa-angle-right"></i>
+            </div>
+          </li>
+          <li><a href="/">Home</a></li>
+          <li class="active-page">
+            <a href="./documentation.html">Documentation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="theme-toggle">
+        <input
+          type="checkbox"
+          class="theme-toggle__checkbox"
+          id="theme-toggle"
+        />
+        <label class="theme-toggle__label" for="theme-toggle">
+          <span> <i class="fas fa-moon"></i></span>
+          <span> <i class="fas fa-sun"></i></span>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- main section -->
+
+    <section class="documentation-section">
+      <main class="documentation-section__main">
+        <section>
+          <h1>Badge</h1>
+          <p class="paragraph"></p>
+          <h3>Image Avatar with Status Badge</h3>
+          <p class="paragraph">
+            Use class
+            <strong
+              >"top-left", "top-right", "bottom-left" or "bottom-right"</strong
+            >
+            for badge placement. Use class
+            <strong>"status-online", "status-offline", "status-away"</strong> to
+            show the specific status.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="badge-container">
+                <div class="avatar-with-image small">
+                  <img src="../../Assets/testimonial.jpg" />
+                </div>
+                <span class="badge-status status-online bottom-left"></span>
+              </div>
+              <div class="badge-container">
+                <div class="avatar-with-image medium">
+                  <img src="../../Assets/testimonial.jpg" />
+                </div>
+                <span class="badge-status status-offline top-right"></span>
+              </div>
+              <div class="badge-container">
+                <div class="avatar-with-image large">
+                  <img src="../../Assets/testimonial.jpg" />
+                </div>
+                <span class="badge-status status-away top-left"></span>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/URN1tadqHWOJzPUUObkL"
+                style="
+                  width: 100%;
+                  height: 197px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Text Initial Avatar with Status Badge</h3>
+          <p class="paragraph">
+            Use class
+            <strong
+              >"top-left", "top-right", "bottom-left" or "bottom-right"</strong
+            >
+            for badge placement.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="badge-container">
+                <div class="avatar-with-text small">MY</div>
+                <span class="badge-status status-online top-left"></span>
+              </div>
+              <div class="badge-container">
+                <div class="avatar-with-text medium">MY</div>
+                <span class="badge-status status-offline bottom-right"></span>
+              </div>
+              <div class="badge-container">
+                <div class="avatar-with-text large">MY</div>
+                <span class="badge-status status-away bottom-left"></span>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/I52kj8gUpB9KnFGxv5PX"
+                style="
+                  width: 100%;
+                  height: 156px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Icon with badge</h3>
+          <p class="paragraph">
+            You can get badge not only on icon as button but also for simple
+            icon or anchor tag as icon.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="badge-container">
+                <button class="btn icon small badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+
+              <div class="badge-container">
+                <button class="btn icon medium badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+              <div class="badge-container">
+                <button class="btn icon large badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+              <div class="badge-container">
+                <button class="btn icon large primary badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">99</span>
+              </div>
+              <div class="badge-container">
+                <button class="btn icon circle large primary badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">99</span>
+              </div>
+              <div class="badge-container">
+                <button class="btn icon square large primary badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">99</span>
+              </div>
+
+              <div class="badge-container">
+                <span
+                  class="icon square rounded-corner large primary badge-counter"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="badge-number">99</span>
+              </div>
+            </div>
+
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/X4fDL4l1S0x4t3XlpFeT"
+                style="
+                  width: 100%;
+                  height: 197px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Text Initial Avatar with Status Badge</h3>
+          <p class="paragraph">
+            Use <strong>"badge-text"</strong> to get badge. Use class
+            <strong>"small", "medium", "large"</strong> for different badge
+            sizes.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div>
+                <h1>
+                  Free for personal <span class="text-badge large">New</span>
+                </h1>
+                <h2>
+                  Free for personal <span class="text-badge medium">New</span>
+                </h2>
+                <h3>
+                  Free for personal <span class="text-badge small">New</span>
+                </h3>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/lJokW25xzp86VlCEcIGF"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- sidebar -->
+      <aside class="documentation-section__aside">
+        <div class="table-of-contents">
+          <ul class="main-list">
+            <li>Get started</li>
+            <li>
+              <ul>
+                <li><a href="../../documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li>Components</li>
+            <li>
+              <ul>
+                <li><a href="../avatar/index.html">Avatar</a></li>
+                <li><a href="../alert/index.html">Alert</a></li>
+                <li><a href="./index.html">Badge</a></li>
+                <li><a href="../button/index.html">Button</a></li>
+                <li><a href="">Card</a></li>
+                <li><a href="">Image</a></li>
+                <li><a href="">Input</a></li>
+                <li><a href="">Text Utilities</a></li>
+                <li><a href="">Lists</a></li>
+                <li><a href="">Navigation</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="">Rating</a></li>
+                <li><a href="">Toast/Notify/Snackbar</a></li>
+                <li><a href="">Grids</a></li>
+                <li><a href="">Slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <h1 class="slogan">Make an impact and create something awesome.</h1>
+      <div class="black-bg-theme hr-line"></div>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <span class="icon white medium"><i class="fab fa-github"></i></span>
+          </li>
+          <li>
+            <span class="icon white medium"
+              ><i class="fab fa-twitter"></i
+            ></span>
+          </li>
+          <li>
+            <span class="icon white medium"
+              ><i class="fab fa-linkedin-in"></i
+            ></span>
+          </li>
+        </ul>
+      </div>
+      <div class="promotion">
+        Made with <i class="fas fa-heart"></i> by Rahul Yadav
+      </div>
+    </footer>
+  </body>
+</html>

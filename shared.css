@@ -1,5 +1,5 @@
 .active-page {
-  border-bottom: 2px solid var(--accent-color-primary);
+  border-bottom: 2px solid var(--primary-color-dark);
 }
 .header-desktop {
   display: flex;
@@ -9,7 +9,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header-desktop a:hover {
-  color: var(--accent-color-primary);
+  color: var(--primary-color-dark);
 }
 .header-desktop ul {
   list-style: none;
@@ -19,11 +19,11 @@
 }
 .header-desktop .brand-logo {
   font-size: 1.5rem;
-  color: var(--accent-color-primary);
+  color: var(--primary-color-dark);
 }
 
 .footer {
-  background: var(--black-color);
+  background: var(--primary-color-dark);
   text-align: center;
   color: var(--white-color);
   padding: 5rem;
@@ -35,7 +35,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   width: fit-content;
   margin: auto;
 }
@@ -87,7 +87,7 @@
 }
 
 .fa-moon {
-  color: var(--accent-color-primary);
+  color: var(--primary-color-dark);
 }
 
 .fa-sun {

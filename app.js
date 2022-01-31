@@ -6,32 +6,41 @@ checkbox.addEventListener('change', () => {
   document.body.classList.toggle('dark-theme');
 });
 
-//alert-trad container actions
+//toggle live and code snippet
 
-const btnLiveDemoAlertTrad = document.querySelector(
-  '.component-container-alert-trad__actions__btn-live-demo'
-);
-const btnCodeSnippetAlertTrad = document.querySelector(
-  '.component-container-alert-trad__actions__btn-code-snippet'
+const btnLiveDemo = document.querySelectorAll(
+  '.component-container__actions__btn-live-demo'
 );
 
-const containerLiveDemoAlertTrad = document.querySelector(
-  '.component-container-alert-trad__live-demo'
-);
-const containerCodeSnippetAlertTrad = document.querySelector(
-  '.component-container-alert-trad__code-snippet'
+const btnCodeSnippet = document.querySelectorAll(
+  '.component-container__actions__btn-code-snippet'
 );
 
-btnCodeSnippetAlertTrad.addEventListener('click', () => {
-  containerCodeSnippetAlertTrad.style.display = 'block';
-  containerLiveDemoAlertTrad.style.display = 'none';
-  btnCodeSnippetAlertTrad.classList.add('active');
-  btnLiveDemoAlertTrad.classList.remove('active');
+btnLiveDemo.forEach(el => {
+  el.addEventListener('click', e => {
+    e.target.parentNode.nextElementSibling.style.display = 'flex';
+    e.target.parentNode.nextElementSibling.nextElementSibling.style.display =
+      'none';
+    e.target.nextElementSibling.classList.remove('active');
+    e.target.classList.add('active');
+  });
+});
+btnCodeSnippet.forEach(el => {
+  el.addEventListener('click', e => {
+    e.target.parentNode.nextElementSibling.style.display = 'none';
+    e.target.parentNode.nextElementSibling.nextElementSibling.style.display =
+      'block';
+    e.target.previousElementSibling.classList.remove('active');
+    e.target.classList.add('active');
+  });
 });
 
-btnLiveDemoAlertTrad.addEventListener('click', () => {
-  containerCodeSnippetAlertTrad.style.display = 'none';
-  containerLiveDemoAlertTrad.style.display = 'flex';
-  btnCodeSnippetAlertTrad.classList.remove('active');
-  btnLiveDemoAlertTrad.classList.add('active');
+//dismiss alert
+
+const btnDismissAlert = document.querySelectorAll('.btn-dismiss-alert');
+
+btnDismissAlert.forEach(el => {
+  el.addEventListener('click', e => {
+    e.target.parentNode.style.display = 'none';
+  });
 });

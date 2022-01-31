@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--white-color);
   border-radius: 50%;
   font-size: 1.2rem;
   line-height: 0;
@@ -49,26 +49,26 @@
   font-size: 1.5rem;
 }
 .info-alert .alert-icon {
-  background: linear-gradient(45deg, #1597e5, #56b4ee);
+  background: linear-gradient(45deg, var(--blue-bg-color));
 }
 .info-alert .alert-content__title {
-  color: #1597e5;
+  color: var(--blue-color);
 }
 .success-alert .alert-icon {
-  background: linear-gradient(45deg, #80ed99, #57cc99);
+  background: linear-gradient(45deg, var(--green-bg-color));
 }
 .success-alert .alert-content__title {
-  color: #80ed99;
+  color: var(--green-color);
 }
 .update-alert .alert-icon {
-  background: linear-gradient(45deg, #ffb830, #ffc947);
+  background: linear-gradient(45deg, var(--yellow-bg-color));
 }
 .update-alert .alert-content__title {
-  color: #ffb830;
+  color: var(--yellow-color);
 }
 .danger-alert .alert-icon {
-  background: linear-gradient(45deg, #bd1616, #ff1700);
+  background: linear-gradient(45deg, var(--red-bg-color));
 }
 .danger-alert .alert-content__title {
-  color: #bd1616;
+  color: var(--red-color);
 }

@@ -109,6 +109,6 @@
   cursor: pointer;
 }
 .component-container__actions button.active {
-  background: var(--accent-color-primary);
+  background: var(--primary-color-dark);
   color: var(--white-color);
 }
