@@ -26,13 +26,13 @@
   padding: 2rem;
   padding-top: 3rem;
 }
-.documentation-section__main h1 {
+.documentation-section__main h1.title {
   font-size: 3rem;
 }
-.documentation-section__main h2 {
+/* .documentation-section__main h2.subtitle {
   font-size: 2.5rem;
-}
-.documentation-section__main h3 {
+} */
+.documentation-section__main h3.subtitle {
   font-size: 1.5rem;
 }
 .documentation-section__main h5.js-heading {
