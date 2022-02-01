@@ -42,6 +42,9 @@
   --primary-color-hover: #3c8d7c;
   --primary-color-dark-hover: #245866;
   --dark-theme-bg-color: #2a2b30;
+
+  /* gradient colors */
+  --gradient-primary-color: #2b6777, #52ab98;
 }
 .old-colors {
   /* --gradient-primary-color: #fc6c04, #e13d00;
@@ -111,5 +114,11 @@ html {
 @media only screen and (max-width: 800px) {
   html {
     font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
   }
 }

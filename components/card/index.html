@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Designs</title>
+
+    <link rel="stylesheet" href="../../palasio-design.css" />
+    <link rel="stylesheet" href="../../shared.css" />
+    <link rel="stylesheet" href="../../documentation.css" />
+    <script defer src="../../app.js"></script>
+    <script defer src="./card.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-desktop">
+      <nav>
+        <ul>
+          <li>
+            <div class="brand-logo">
+              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+              ><i class="fas fa-angle-right"></i>
+            </div>
+          </li>
+          <li><a href="/">Home</a></li>
+          <li class="active-page">
+            <a href="./documentation.html">Documentation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="theme-toggle">
+        <input
+          type="checkbox"
+          class="theme-toggle__checkbox"
+          id="theme-toggle"
+        />
+        <label class="theme-toggle__label" for="theme-toggle">
+          <span> <i class="fas fa-moon"></i></span>
+          <span> <i class="fas fa-sun"></i></span>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- main section -->
+
+    <section class="documentation-section">
+      <main class="documentation-section__main">
+        <section>
+          <h1 class="title">Card</h1>
+          <p class="paragraph">
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content. Lorem ipsum may be
+            used as a placeholder before the final copy is available.
+          </p>
+          <h3 class="subtitle">E-commerce Card</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                  <!-- <span class="badge highlight top left">-20%</span>
+
+                  <span class="badge bottom right"
+                    >4.4 <i class="fas fa-star"></i> | 123</span
+                  > -->
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <span class="icon medium primary"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+
+                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
+                style="
+                  width: 100%;
+                  height: 258px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3 class="subtitle">E-commerce Card with Shadow</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                  <!-- <span class="badge highlight top left">-20%</span>
+
+                  <span class="badge bottom right"
+                    >4.4 <i class="fas fa-star"></i> | 123</span
+                  > -->
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <span class="icon medium primary"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+
+                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
+                style="
+                  width: 100%;
+                  height: 258px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3 class="subtitle">E-commerce Card with Badge</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                  <span class="badge highlight top left">-20%</span>
+
+                  <span class="badge bottom right"
+                    >4.4 <i class="fas fa-star"></i> | 123</span
+                  >
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <span class="icon medium primary"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+
+                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
+                style="
+                  width: 100%;
+                  height: 258px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3 class="subtitle">E-commerce Card with Ribbon</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow ecom ribbon" ribbon-content="Exclusive">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                  <!-- <span class="badge highlight top left">-20%</span>
+
+                  <span class="badge bottom right"
+                    >4.4 <i class="fas fa-star"></i> | 123</span
+                  > -->
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <span class="icon medium primary"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+
+                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
+                style="
+                  width: 100%;
+                  height: 258px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3 class="subtitle">Simple Text Card</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                  <!-- <span class="badge highlight top left">-20%</span>
+
+                  <span class="badge bottom right"
+                    >4.4 <i class="fas fa-star"></i> | 123</span
+                  > -->
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <span class="icon medium primary"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+
+                <span class="overlay"><p>out of stock</p></span>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
+                style="
+                  width: 100%;
+                  height: 258px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Simple Text Card</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card text shadow">
+                <h1 class="title">Test</h1>
+                <p>
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without relying on meaningful content.
+                  Lorem ipsum may be used as
+                </p>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
+                style="
+                  width: 100%;
+                  height: 135px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Text Card with Dismiss</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card text shadow">
+                <h1 class="title">Test</h1>
+                <p>
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without relying on meaningful content.
+                  Lorem ipsum may be used as
+                </p>
+                <button class="btn icon medium dismiss">
+                  <i class="far fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
+                style="
+                  width: 100%;
+                  height: 135px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Text Card with Actions</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card text shadow">
+                <h1 class="title">Test</h1>
+                <p>
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without relying on meaningful content.
+                  Lorem ipsum may be used as
+                </p>
+                <div class="flex end gap">
+                  <button class="btn outline primary">Cancel</button>
+                  <button class="btn primary">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
+                style="
+                  width: 100%;
+                  height: 135px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Social Media Card</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow social">
+                <div class="flex space-between align-center">
+                  <div class="flex gap align-center">
+                    <div class="avatar-with-image small">
+                      <img src="../../Assets/testimonial.jpg" />
+                    </div>
+                    <div class="flex col">
+                      <div class="user">Michael</div>
+                      <div class="time">Today</div>
+                    </div>
+                  </div>
+                  <span class="icon medium"
+                    ><i class="fas fa-ellipsis-v"></i
+                  ></span>
+                </div>
+                <div class="image">
+                  <img
+                    class="image-responsive"
+                    src="../../Assets/stil-b4DtZhxJjPM-unsplash.jpg"
+                  />
+                </div>
+                <div class="actions flex gap">
+                  <span class="icon medium primary"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                  <span class="icon medium primary"
+                    ><i class="far fa-comment"></i
+                  ></span>
+
+                  <span class="icon medium primary"
+                    ><i class="fas fa-share-alt"></i
+                  ></span>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text...
+                </p>
+                <div class="actions"></div>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
+                style="
+                  width: 100%;
+                  height: 135px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Horizontal Card</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow product-detail">
+                <div class="image">
+                  <img
+                    class="image-responsive"
+                    src="https://i.picsum.photos/id/529/536/354.jpg?hmac=ItKRFzeMMS8zYbKrxh5qmJh9oLug_ZI8pqBB2z4kos0"
+                  />
+                </div>
+                <div class="product-detail__text">
+                  <h1 class="brand">ZAPATOZ</h1>
+                  <h2 class="title">Loud Speaker</h2>
+                  <div class="rating">
+                    4.4 <i class="fas fa-star"></i> | 3.9k Ratings
+                  </div>
+                  <div class="hr-line solid grey"></div>
+                  <div class="price flex gap">
+                    <div class="price__old">$100</div>
+                    <div class="price__new">$80</div>
+                  </div>
+                  <div class="text-details">inclusive of all taxes</div>
+                  <div class="buttons">
+                    <button class="btn primary icon-with-text">
+                      Add to Cart
+                      <span><i class="fas fa-shopping-cart"></i></span>
+                    </button>
+                    <button class="btn outline primary">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
+                style="
+                  width: 100%;
+                  height: 135px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Vertical Card</h3>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <div class="card shadow product-detail vertical">
+                <div class="image">
+                  <img
+                    class="image-responsive"
+                    src="https://i.picsum.photos/id/529/536/354.jpg?hmac=ItKRFzeMMS8zYbKrxh5qmJh9oLug_ZI8pqBB2z4kos0"
+                  />
+                </div>
+                <div class="product-detail__text">
+                  <h1 class="brand">ZAPATOZ</h1>
+                  <h2 class="title">Loud Speaker</h2>
+                  <div class="rating">
+                    4.4 <i class="fas fa-star"></i> | 3.9k Ratings
+                  </div>
+                  <div class="hr-line solid grey"></div>
+                  <div class="price flex gap">
+                    <div class="price__old">$100</div>
+                    <div class="price__new">$80</div>
+                  </div>
+                  <div class="text-details">inclusive of all taxes</div>
+                  <div class="buttons">
+                    <button class="btn primary icon-with-text">
+                      Add to Cart
+                      <span><i class="fas fa-shopping-cart"></i></span>
+                    </button>
+                    <button class="btn outline primary">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
+                style="
+                  width: 100%;
+                  height: 135px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- sidebar -->
+      <aside class="documentation-section__aside">
+        <div class="table-of-contents">
+          <ul class="main-list">
+            <li>Get started</li>
+            <li>
+              <ul>
+                <li><a href="../../documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li>Components</li>
+            <li>
+              <ul>
+                <li><a href="./index.html">Avatar</a></li>
+                <li><a href="../alert/index.html">Alert</a></li>
+                <li><a href="../badge/index.html">Badge</a></li>
+                <li><a href="../button/index.html">Button</a></li>
+                <li><a href="">Card</a></li>
+                <li><a href="">Image</a></li>
+                <li><a href="">Input</a></li>
+                <li><a href="">Text Utilities</a></li>
+                <li><a href="">Lists</a></li>
+                <li><a href="">Navigation</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="">Rating</a></li>
+                <li><a href="">Toast/Notify/Snackbar</a></li>
+                <li><a href="">Grids</a></li>
+                <li><a href="">Slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <h1 class="slogan">Make an impact and create something awesome.</h1>
+      <div class="black-bg-theme hr-line"></div>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <span class="icon icon-small"
+              ><i id="icon" class="fab fa-github"></i
+            ></span>
+          </li>
+          <li>
+            <span class="icon icon-small"
+              ><i id="icon" class="fab fa-twitter"></i
+            ></span>
+          </li>
+          <li>
+            <span class="icon icon-small"
+              ><i id="icon" class="fab fa-linkedin-in"></i
+            ></span>
+          </li>
+        </ul>
+      </div>
+      <div class="promotion">
+        Made with <i class="fas fa-heart"></i> by Rahul Yadav
+      </div>
+    </footer>
+  </body>
+</html>
