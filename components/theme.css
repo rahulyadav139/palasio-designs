@@ -1,10 +1,12 @@
 body {
   color: var(--black-color);
   background: var(--white-color);
+  --std-font-color: var(--black-color);
+  --invert-font-color: var(--white-color);
+  --default-color: var(--secondary-color);
+  --default-color-hover: var(--secondary-color-dark);
 
-  --accent-color-primary: var(--primary-color-dark);
-
-  --font-color-light: var(--grey-color);
+  /* --font-color-light: var(--grey-color);
   --font-color-dark: var(--black-color);
 
   --font-color-complimentary-hover: var(--primary-color-dark);
@@ -14,28 +16,23 @@ body {
   --icon-color: var(--white-color);
   --invert-background-color: var(--black-color);
   --background-color: var(--white-color);
-  /* background: var(--off-white-color); */
-  /* background: #eeeeee; */
-  /* background: var(--white-color); */
-  background: white;
+  */
 }
 
 body.dark-theme {
   color: var(--white-color);
   background: var(--dark-theme-bg-color);
+  --std-font-color: var(--white-color);
+  --invert-font-color: var(--black-color);
+  --default-color: var(--secondary-color-light);
 
-  --accent-color-primary: var(--primary-color);
-
-  --font-color-light: var(--off-white-color);
+  /* --font-color-light: var(--off-white-color);
   --font-color-dark: var(--white-color);
   --btn-text-color: var(--black-color);
   --btn-badge-bg-color: var(--black-color);
 
-  --default-alert-bg-color: #9d9d9d;
-  --default-alert-color: #eeeeee;
 
   --icon-color: var(--black-color);
   --invert-background-color: var(--white-color);
-  --background-color: var(--black-color);
-  /* background: var(--black-color); */
+  --background-color: var(--black-color); */
 }

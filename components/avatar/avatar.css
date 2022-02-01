@@ -7,27 +7,30 @@
   block-size: auto;
   aspect-ratio: 1/1;
 }
-.avatar-small img {
+.avatar-with-image.small img {
   border: 2px solid var(--primary-color-dark);
 }
-.avatar-medium img {
+.avatar-with-image.medium img {
   border: 3px solid var(--primary-color-dark);
 }
-.avatar-large img {
+.avatar-with-image.large img {
   border: 4px solid var(--primary-color-dark);
 }
-.avatar-small {
-  width: 50px;
-  height: 50px;
+.avatar-with-image.small,
+.avatar-with-text.small {
+  width: 3rem;
+  height: 3rem;
 }
 
-.avatar-medium {
-  width: 100px;
-  height: 100px;
+.avatar-with-image.medium,
+.avatar-with-text.medium {
+  width: 6.25rem;
+  height: 6.25rem;
 }
-.avatar-large {
-  width: 150px;
-  height: 150px;
+.avatar-with-image.large,
+.avatar-with-text.large {
+  width: 9.5rem;
+  height: 9.5rem;
 }
 
 /* avatar with text */
@@ -40,14 +43,13 @@
   align-items: center;
   line-height: 0;
   border-radius: 50%;
-  /* font-family: 'Lato', sans-serif; */
 }
-.avatar-with-text.avatar-small {
+.avatar-with-text.small {
   font-size: 1rem;
 }
-.avatar-with-text.avatar-medium {
+.avatar-with-text.medium {
   font-size: 2.5rem;
 }
-.avatar-with-text.avatar-large {
+.avatar-with-text.large {
   font-size: 4rem;
 }

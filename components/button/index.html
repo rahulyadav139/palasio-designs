@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Designs</title>
+
+    <link rel="stylesheet" href="../../palasio-design.css" />
+    <link rel="stylesheet" href="../../shared.css" />
+    <link rel="stylesheet" href="../../documentation.css" />
+
+    <script defer src="../../app.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-desktop">
+      <nav>
+        <ul>
+          <li>
+            <div class="brand-logo">
+              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+              ><i class="fas fa-angle-right"></i>
+            </div>
+          </li>
+          <li><a href="/">Home</a></li>
+          <li class="active-page">
+            <a href="./documentation.html">Documentation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="theme-toggle">
+        <input
+          type="checkbox"
+          class="theme-toggle__checkbox"
+          id="theme-toggle"
+        />
+        <label class="theme-toggle__label" for="theme-toggle">
+          <span> <i class="fas fa-moon"></i></span>
+          <span> <i class="fas fa-sun"></i></span>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- main section -->
+
+    <section class="documentation-section">
+      <main class="documentation-section__main">
+        <section>
+          <h1>Buttons</h1>
+          <p class="paragraph">
+            This component library provides ample customization for you project.
+            Button component comes in different style and use case as your
+            project demands. Just provide required class to button component and
+            make it styled for your project as you want.
+          </p>
+          <h3>Default Button</h3>
+          <p class="paragraph">
+            Default button comes in flat style and dark color. You can get the
+            default style just providing <strong>"btn"</strong> class to the
+            component.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <button class="btn">Default</button>
+            </div>
+
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/dd9YgQkvVyCTJ9wqU9Y5"
+                style="
+                  width: 100%;
+                  height: 115px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Types</h3>
+          <p class="paragraph">
+            This component library provides 4 different button types other than
+            Default for different use cases. Primary, Secondary, Error, and
+            Success and you can get these just by adding class
+            <strong>"primary", "secondary", "error", and "success"</strong>
+            respectively.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+
+            <div class="component-container__live-demo">
+              <button class="btn primary">Primary</button>
+              <button class="btn secondary">Secondary</button>
+              <button class="btn error">Error</button>
+              <button class="btn success">Success</button>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/ExuYvUYxTzGFmSfYLUAE"
+                style="
+                  width: 100%;
+                  height: 156px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Shapes</h3>
+          <p class="paragraph">
+            By default, the button component comes with a flat shape but you get
+            two more rounded corners and rounded edges by adding
+            <strong>"rounded-corner"</strong> and
+            <strong>"rounded-edge"</strong> to the button component
+            respectively.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+
+            <div class="component-container__live-demo">
+              <button class="btn primary">Primary</button>
+              <button class="btn primary rounded-corner">Primary</button>
+              <button class="btn primary rounded-edge">Primary</button>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/eKEe5p8vxwIxLZXD8KPH"
+                style="
+                  width: 100%;
+                  height: 156px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Outline</h3>
+          <p class="paragraph">
+            Get outline button by adding <strong>"outline"</strong> class.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo
+              </button>
+              <button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+
+            <div class="component-container__live-demo">
+              <button class="btn primary outline">Primary</button>
+              <button class="btn primary outline rounded-corner">
+                Primary
+              </button>
+              <button class="btn primary outline rounded-edge">Primary</button>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/WZL8nJO0mMQlARqDjhwb"
+                style="
+                  width: 100%;
+                  height: 156px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Button with Icon and Text</h3>
+          <p class="paragraph">
+            Sometimes you need a button with an icon and label. You can get by
+            adding class <strong>"icon-with-text"</strong>. You can use any
+            font-awesome/bootstrap icon. Make sure you place an icon on the
+            right side of the button.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+
+            <div class="component-container__live-demo">
+              <button class="btn rounded-corner icon-with-text">
+                Add To Cart
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </button>
+              <button class="btn rounded-edge primary icon-with-text">
+                Add To Cart
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </button>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/wSjs6DV0Hh88Tf08khNK"
+                style="
+                  width: 100%;
+                  height: 176px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Button with Icon</h3>
+          <p class="paragraph">
+            When you need an icon as a button, this library provides it also. An
+            icon comes in 3 different sizes and 2 different shapes. You can get
+            any size by adding <strong>"small"</strong>,
+            <strong>"medium"</strong>, or <strong>"large"</strong> class. By
+            default, the icon has no background shape but you can get any of the
+            two shapes by adding <strong>"circle"</strong> or
+            <strong>"square"</strong> class to the component. There are 3 more
+            classes <strong>"primary"</strong>, <strong>"black"</strong> and
+            <strong>"white"</strong>. When you need an icon according to your
+            accent color you can add primary class to the component. When there
+            is white background and you need to fix the icon as black always
+            even in the dark theme you can add black class to the component.
+            Similarly with black background, you can add white class to the
+            component. You can use icon as float on the screen. Just add
+            <strong>"float"</strong> class and align with
+            <strong>"top", "bottom", "left" and "right"</strong> classes.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+
+            <div class="component-container__live-demo">
+              <button class="btn icon small">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn icon medium">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn icon large">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn icon large circle primary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn icon large square primary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn icon large square rounded-corner primary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/RGMLV0WKLyHVXhUa1H9M"
+                style="
+                  width: 100%;
+                  height: 156px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <h3>Link</h3>
+          <p class="paragraph">
+            You can customize the link too. When you need an icon as a link, you
+            add classes to get what you desire. Customization for an icon as a
+            link is similar to an icon as a button but for semantic HTML you
+            need to provide classes to the anchor tag. Sometimes you need a
+            simple link, you get by adding <strong>"link"</strong> to the anchor
+            tag. With matching to accent color to the theme add
+            <strong>"primary"</strong> class. When you faded color as link text
+            then add <strong>"secondary"</strong> class.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+
+            <div class="component-container__live-demo">
+              <a class="icon medium" href="https://www.google.com/">
+                <i class="fab fa-google"></i>
+              </a>
+              <a class="icon medium square" href="https://www.google.com/">
+                <i class="fab fa-google"></i>
+              </a>
+
+              <a
+                class="icon medium square rounded-corner"
+                href="https://www.google.com/"
+              >
+                <i class="fab fa-google"></i>
+              </a>
+              <a
+                class="icon medium circle primary"
+                href="https://www.google.com/"
+              >
+                <i class="fab fa-google"></i>
+              </a>
+              <a class="link" href="https://www.google.com/">default link</a>
+              <a class="link primary" href="https://www.google.com/">
+                primary link
+              </a>
+              <a class="link secondary" href="https://www.google.com/">
+                secondary link
+              </a>
+            </div>
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/Xgc2WNOkQdve2yhwQ2Hv"
+                style="
+                  width: 100%;
+                  height: 340px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- sidebar -->
+      <aside class="documentation-section__aside">
+        <div class="table-of-contents">
+          <ul class="main-list">
+            <li>Get started</li>
+            <li>
+              <ul>
+                <li><a href="../../documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li>Components</li>
+            <li>
+              <ul>
+                <li><a href="../avatar/index.html">Avatar</a></li>
+                <li><a href="../alert/index.html">Alert</a></li>
+                <li><a href="../badge/index.html">Badge</a></li>
+                <li><a href="./index.html">Button</a></li>
+                <li><a href="">Card</a></li>
+                <li><a href="">Image</a></li>
+                <li><a href="">Input</a></li>
+                <li><a href="">Text Utilities</a></li>
+                <li><a href="">Lists</a></li>
+                <li><a href="">Navigation</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="">Rating</a></li>
+                <li><a href="">Toast/Notify/Snackbar</a></li>
+                <li><a href="">Grids</a></li>
+                <li><a href="">Slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <h1 class="slogan">Make an impact and create something awesome.</h1>
+      <div class="black-bg-theme hr-line"></div>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <a class="icon medium white"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a class="icon medium white"
+              ><i id="icon" class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a class="icon medium white"
+              ><i id="icon" class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="promotion">
+        Made with <i class="fas fa-heart"></i> by Rahul Yadav
+      </div>
+    </footer>
+  </body>
+</html>

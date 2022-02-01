@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palasio Design</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-    />
+
     <link rel="stylesheet" href="./palasio-design.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./documentation.css" />
-    <script defer src="./components/alerts/alert.js"></script>
+
     <script defer src="./app.js"></script>
   </head>
   <body>
+    <!-- header -->
+
     <header class="card-with-shadow header-desktop">
       <nav>
         <ul>
@@ -46,18 +45,10 @@
       </div>
     </header>
 
+    <!-- main section -->
+
     <section class="documentation-section">
       <main class="documentation-section__main">
-        <section id="overview">
-          <h1>Overview</h1>
-          <p class="paragraph">
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before the final copy is available.
-          </p>
-        </section>
-        <div class="hr-line"></div>
         <section id="getting-started">
           <h1>Getting Started</h1>
           <p class="paragraph">
@@ -66,406 +57,43 @@
             your html elements.
           </p>
         </section>
-        <div class="hr-line"></div>
-        <section id="components">
-          <h1>Components</h1>
-          <p class="paragraph">
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before the final copy is available.
-          </p>
-          <!-- avatar component -->
-          <section id="avatar">
-            <h2>Avatar</h2>
-            <p class="paragraph">
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available.
-            </p>
-            <h3>Avatar with Image</h3>
-            <div
-              class="card-with-shadow component-container component-container--avatar-image"
-            >
-              <div class="component-container__actions">
-                <button
-                  class="active component-container-avatar-image__actions__btn-live-demo"
-                >
-                  Live Demo</button
-                ><button
-                  class="component-container-avatar-image__actions__btn-code-snippet"
-                >
-                  Code Snippet
-                </button>
-              </div>
-              <div
-                class="component-container__live-demo component-container-avatar-image__live-demo"
-              >
-                <div class="avatar-with-image avatar-small">
-                  <img src="../../../Assets/testimonial.jpg" alt="sample" />
-                </div>
-                <div class="avatar-with-image avatar-medium">
-                  <img src="../../../Assets/testimonial.jpg" alt="sample" />
-                </div>
-                <div class="avatar-with-image avatar-large">
-                  <img src="../../../Assets/testimonial.jpg" alt="sample" />
-                </div>
-              </div>
-              <div
-                class="component-container__code-snippet component-container-avatar-image__code-snippet"
-              >
-                <iframe
-                  src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
-                  style="
-                    width: 100%;
-                    height: 258px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
-            <h3>Avatar with Text Initials</h3>
-            <div
-              class="card-with-shadow component-container component-container--avatar-text"
-            >
-              <div class="component-container__actions">
-                <button
-                  class="active component-container-avatar-text__actions__btn-live-demo"
-                >
-                  Live Demo</button
-                ><button
-                  class="component-container-avatar-text__actions__btn-code-snippet"
-                >
-                  Code Snippet
-                </button>
-              </div>
-              <div
-                class="component-container__live-demo component-container-avatar-text__live-demo"
-              >
-                <div class="avatar-with-text avatar-small">RY</div>
-                <div class="avatar-with-text avatar-medium">RY</div>
-                <div class="avatar-with-text avatar-large">RY</div>
-              </div>
-              <div
-                class="component-container__code-snippet component-container-avatar-text__code-snippet"
-              >
-                <iframe
-                  src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                  style="
-                    width: 100%;
-                    height: 135px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
-          </section>
-
-          <div class="hr-line"></div>
-          <section id="alerts">
-            <h2>Alerts</h2>
-            <p class="paragraph">
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available.
-            </p>
-            <h3>Alert (style - 1)</h3>
-            <div
-              class="card-with-shadow component-container component-container__alert-trad"
-            >
-              <div class="component-container__actions">
-                <button
-                  class="active component-container-alert-trad__actions__btn-live-demo"
-                >
-                  Live Demo</button
-                ><button
-                  class="component-container-alert-trad__actions__btn-code-snippet"
-                >
-                  Code Snippet
-                </button>
-              </div>
-              <div
-                class="component-container__live-demo component-container-alert-trad__live-demo"
-              >
-                <!-- alert with dismiss button -->
-
-                <div class="alert alert-with-dismiss default-alert-trad">
-                  <div class="alert-dark-accent-color"></div>
-                  <div class="alert-content">
-                    <h5>Component library: Default Alert</h5>
-                    <span class="btn-dismiss-alert"
-                      ><i class="far fa-times-circle"></i
-                    ></span>
-                  </div>
-                </div>
-                <!-- standard alert -->
-                <div class="alert default-alert-trad">
-                  <div class="alert-dark-accent-color"></div>
-                  <div class="alert-content">
-                    <h5>Component library: Default Alert</h5>
-                    <span class="btn-dismiss-alert"
-                      ><i class="far fa-times-circle"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert success-alert-trad">
-                  <div class="alert-dark-accent-color"></div>
-                  <div class="alert-content">
-                    <h5>
-                      <i class="fas fa-check-circle"></i> Component library:
-                      Success Alert
-                    </h5>
-                    <span class="btn-dismiss-alert"
-                      ><i class="far fa-times-circle"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert info-alert-trad">
-                  <div class="alert-dark-accent-color"></div>
-                  <div class="alert-content">
-                    <h5>
-                      <i class="fas fa-info-circle"></i> Component library: Info
-                      Alert
-                    </h5>
-                    <span class="btn-dismiss-alert"
-                      ><i class="far fa-times-circle"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert danger-alert-trad">
-                  <div class="alert-dark-accent-color"></div>
-                  <div class="alert-content">
-                    <h5>
-                      <i class="far fa-times-circle"></i> Component library:
-                      Danger Alert
-                    </h5>
-                    <span class="btn-dismiss-alert"
-                      ><i class="far fa-times-circle"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert warning-alert-trad">
-                  <div class="alert-dark-accent-color"></div>
-                  <div class="alert-content">
-                    <h5>
-                      <i class="fas fa-exclamation-circle"></i> Component
-                      library: Warning Alert
-                    </h5>
-                    <span class="btn-dismiss-alert"
-                      ><i class="far fa-times-circle"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="component-container__code-snippet component-container-alert-trad__code-snippet"
-              >
-                <iframe
-                  src="https://carbon.now.sh/embed/5XVsyIF83rSuMFLcqdAz"
-                  style="
-                    width: 100%;
-                    height: 350px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-                <h5 class="js-heading">JavaScript:</h5>
-                <iframe
-                  src="https://carbon.now.sh/embed/R5Mg8DTHKFrm06cyHVy4"
-                  style="
-                    width: 100%;
-                    height: 217px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
-            <h3>Alert (style - 2)</h3>
-            <div
-              class="card-with-shadow component-container component-container-alert-mod"
-            >
-              <div class="component-container__actions">
-                <button
-                  class="active component-container-alert-mod__actions__btn-live-demo"
-                >
-                  Live Demo</button
-                ><button
-                  class="component-container-alert-mod__actions__btn-code-snippet"
-                >
-                  Code Snippet
-                </button>
-              </div>
-              <div
-                class="component-container__live-demo component-container-alert-mod__live-demo"
-              >
-                <!-- alert with dismiss button -->
-
-                <div class="alert alert-mod alert-with-dismiss info-alert-mod">
-                  <span class="alert-mod-icon"
-                    ><i class="bi bi-info-circle"></i
-                  ></span>
-
-                  <div class="alert-content">
-                    <div class="alert-content__wrapper">
-                      <h5 class="alert-content__title">Update Information</h5>
-                      <p class="alert-content__details">
-                        To extend the sidebar to the bottom of the viewport
-                      </p>
-                    </div>
-                    <span class="btn-dismiss-alert"
-                      ><i class="bi bi-x"></i
-                    ></span>
-                  </div>
-                </div>
-                <!-- standard alert -->
-                <div class="alert alert-mod info-alert-mod">
-                  <span class="alert-mod-icon"
-                    ><i class="bi bi-info-circle"></i
-                  ></span>
-
-                  <div class="alert-content">
-                    <div class="alert-content__wrapper">
-                      <h5 class="alert-content__title">Update Information</h5>
-                      <p class="alert-content__details">
-                        To extend the sidebar to the bottom of the viewport
-                      </p>
-                    </div>
-                    <span class="btn-dismiss-alert"
-                      ><i class="bi bi-x"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert alert-mod success-alert-mod">
-                  <span class="alert-mod-icon"
-                    ><i class="bi bi-check-circle"></i
-                  ></span>
-
-                  <div class="alert-content">
-                    <div class="alert-content__wrapper">
-                      <h5 class="alert-content__title">Successful Update</h5>
-                      <p class="alert-content__details">
-                        To extend the sidebar to the bottom of the viewport
-                      </p>
-                    </div>
-                    <span class="btn-dismiss-alert"
-                      ><i class="bi bi-x"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert alert-mod update-alert-mod">
-                  <span class="alert-mod-icon"
-                    ><i class="bi bi-exclamation-circle"></i
-                  ></span>
-
-                  <div class="alert-content">
-                    <div class="alert-content__wrapper">
-                      <h5 class="alert-content__title">Update Problem</h5>
-                      <p class="alert-content__details">
-                        To extend the sidebar to the bottom of the viewport
-                      </p>
-                    </div>
-                    <span class="btn-dismiss-alert"
-                      ><i class="bi bi-x"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="alert alert-mod danger-alert-mod">
-                  <span class="alert-mod-icon"
-                    ><i class="bi bi-x-circle"></i
-                  ></span>
-
-                  <div class="alert-content">
-                    <div class="alert-content__wrapper">
-                      <h5 class="alert-content__title">Can't Update</h5>
-                      <p class="alert-content__details">
-                        To extend the sidebar to the bottom of the viewport
-                      </p>
-                    </div>
-                    <span class="btn-dismiss-alert"
-                      ><i class="bi bi-x"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="component-container__code-snippet component-container-alert-mod__code-snippet"
-              >
-                <iframe
-                  src="https://carbon.now.sh/embed/etW0RPDTP2faPOjcEhhK"
-                  style="
-                    width: 100%;
-                    height: 350px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-                <h5 class="js-heading">JavaScript:</h5>
-                <iframe
-                  src="https://carbon.now.sh/embed/R5Mg8DTHKFrm06cyHVy4"
-                  style="
-                    width: 100%;
-                    height: 217px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
-          </section>
-        </section>
       </main>
+      <!-- sidebar -->
       <aside class="documentation-section__aside">
         <div class="table-of-contents">
           <ul class="main-list">
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#getting-started">Getting started</a></li>
+            <li>Get started</li>
             <li>
-              <a href="#components">Components</a>
               <ul>
-                <li><a href="#avatar">Avatar</a></li>
-                <li><a href="#alerts">Alerts</a></li>
-                <li><a href="#badge">Badge</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#card">Card</a></li>
-                <li><a href="#image">Image</a></li>
-                <li><a href="#input">Input</a></li>
-                <li><a href="#text-utilities">Text Utilities</a></li>
-                <li><a href="#lists">Lists</a></li>
-                <li><a href="#navigation">Navigation</a></li>
-                <li><a href="#model">Modal</a></li>
-                <li><a href="#rating">Rating</a></li>
-                <li><a href="#toast">Toast/Notify/Snackbar</a></li>
-                <li><a href="#grids">Grids</a></li>
-                <li><a href="#slider">Slider</a></li>
+                <li><a href="./documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li>Components</li>
+            <li>
+              <ul>
+                <li><a href="./components/avatar/index.html">Avatar</a></li>
+                <li><a href="./components/alert/index.html">Alerts</a></li>
+                <li><a href="./components/badge/index.html">Badge</a></li>
+                <li><a href="./components/button/index.html">Buttons</a></li>
+                <li><a href="./components/card/index.html">Card</a></li>
+                <li><a href="">Image</a></li>
+                <li><a href="">Input</a></li>
+                <li><a href="">Text Utilities</a></li>
+                <li><a href="">Lists</a></li>
+                <li><a href="">Navigation</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="">Rating</a></li>
+                <li><a href="">Toast/Notify/Snackbar</a></li>
+                <li><a href="">Grids</a></li>
+                <li><a href="">Slider</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </aside>
     </section>
+
+    <!-- footer -->
 
     <footer class="footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
