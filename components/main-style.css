@@ -43,6 +43,12 @@
   --primary-color-dark-hover: #245866;
   --dark-theme-bg-color: #2a2b30;
 
+  /* colors for input */
+  --text-input-border-color: #52ab98;
+  --text-input-bg-color: #c8f5ea;
+  --text-input-error-border-color: #ff5c58;
+  --text-input-error-bg-color: #fdd0cf;
+
   /* gradient colors */
   --gradient-primary-color: #2b6777, #52ab98;
 }

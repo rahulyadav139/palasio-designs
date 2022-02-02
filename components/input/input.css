@@ -1,0 +1,33 @@
+.input-field {
+  border: 1.5px solid var(--grey-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--primary-color);
+  background: var(--text-input-bg-color);
+}
+
+.input-field.error {
+  border-color: var(--text-input-error-border-color);
+}
+
+.input-field.error:focus {
+  border-color: var(--text-input-error-border-color);
+  background: var(--text-input-error-bg-color);
+}
+
+.search-input {
+  border: 1.5px solid var(--primary-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  vertical-align: middle;
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
