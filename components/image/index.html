@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Designs</title>
+
+    <link rel="stylesheet" href="../../palasio-design.css" />
+    <link rel="stylesheet" href="../../shared.css" />
+    <link rel="stylesheet" href="../../documentation.css" />
+
+    <script defer src="../../app.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-desktop">
+      <nav>
+        <ul>
+          <li>
+            <div class="brand-logo">
+              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+              ><i class="fas fa-angle-right"></i>
+            </div>
+          </li>
+          <li><a href="/">Home</a></li>
+          <li class="active-page">
+            <a href="./documentation.html">Documentation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="theme-toggle">
+        <input
+          type="checkbox"
+          class="theme-toggle__checkbox"
+          id="theme-toggle"
+        />
+        <label class="theme-toggle__label" for="theme-toggle">
+          <span> <i class="fas fa-moon"></i></span>
+          <span> <i class="fas fa-sun"></i></span>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- main section -->
+
+    <section class="documentation-section">
+      <main class="documentation-section__main">
+        <section>
+          <h1>Buttons</h1>
+          <p class="paragraph">
+            This component library provides ample customization for you project.
+            Button component comes in different style and use case as your
+            project demands. Just provide required class to button component and
+            make it styled for your project as you want.
+          </p>
+          <h3>Default Button</h3>
+          <p class="paragraph">
+            Default button comes in flat style and dark color. You can get the
+            default style just providing <strong>"btn"</strong> class to the
+            component.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
+              <img
+                class="img-responsive"
+                src="https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
+              />
+              <img
+                class="img-responsive round"
+                src="https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
+              />
+            </div>
+
+            <div class="component-container__code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/dd9YgQkvVyCTJ9wqU9Y5"
+                style="
+                  width: 100%;
+                  height: 115px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- sidebar -->
+      <aside class="documentation-section__aside">
+        <div class="table-of-contents">
+          <ul class="main-list">
+            <li>Get started</li>
+            <li>
+              <ul>
+                <li><a href="../../documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li>Components</li>
+            <li>
+              <ul>
+                <li><a href="../avatar/index.html">Avatar</a></li>
+                <li><a href="../alert/index.html">Alert</a></li>
+                <li><a href="../badge/index.html">Badge</a></li>
+                <li><a href="./index.html">Button</a></li>
+                <li><a href="">Card</a></li>
+                <li><a href="">Image</a></li>
+                <li><a href="">Input</a></li>
+                <li><a href="">Text Utilities</a></li>
+                <li><a href="">Lists</a></li>
+                <li><a href="">Navigation</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="">Rating</a></li>
+                <li><a href="">Toast/Notify/Snackbar</a></li>
+                <li><a href="">Grids</a></li>
+                <li><a href="">Slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <h1 class="slogan">Make an impact and create something awesome.</h1>
+      <div class="black-bg-theme hr-line"></div>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <a class="icon medium white"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a class="icon medium white"
+              ><i id="icon" class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a class="icon medium white"
+              ><i id="icon" class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="promotion">
+        Made with <i class="fas fa-heart"></i> by Rahul Yadav
+      </div>
+    </footer>
+  </body>
+</html>

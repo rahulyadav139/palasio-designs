@@ -127,6 +127,7 @@
   line-height: 0;
   height: 2.33rem;
   width: 2.33rem;
+  vertical-align: middle;
 }
 .dark-theme .btn.icon-with-text span {
   background: var(--dark-theme-bg-color);
@@ -169,6 +170,7 @@
   color: var(--std-font-color);
   background: none;
   line-height: 0;
+  vertical-align: middle;
 }
 .icon.primary {
   color: var(--primary-color);
