@@ -2,8 +2,8 @@ const searchContainer = document.querySelector('.search-input');
 const searchInputField = searchContainer.querySelector('input');
 
 searchInputField.addEventListener('focus', () => {
-  searchContainer.style.backgroundColor = 'var(--text-input-bg-color)';
-  searchInputField.style.backgroundColor = 'var(--text-input-bg-color)';
+  searchContainer.style.backgroundColor = 'var(--input-bg-color)';
+  searchInputField.style.backgroundColor = 'var(--input-bg-color)';
 });
 
 searchInputField.addEventListener('blur', () => {
