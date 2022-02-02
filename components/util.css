@@ -1,0 +1,86 @@
+.flex {
+  display: flex;
+}
+
+.flex.col {
+  flex-direction: column;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.start {
+  justify-content: flex-start;
+}
+.flex.end {
+  justify-content: flex-end;
+}
+.flex.space-between {
+  justify-content: space-between;
+}
+.flex.space-around {
+  justify-content: space-around;
+}
+.flex.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.gap {
+  gap: 1rem;
+}
+
+.image-responsive {
+  object-fit: cover;
+  object-position: center;
+  max-inline-size: 100%;
+  block-size: auto;
+  height: 100%;
+  /* aspect-ratio: 1/1; */
+}
+
+.hr-line {
+  height: 1px;
+  width: 100%;
+}
+
+.hr-line.fad {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(25, 25, 25, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.dark-theme .hr-line.fad {
+  background: linear-gradient(
+    90deg,
+    #2a2b30 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #2a2b30 100%
+  );
+}
+
+.hr-line.solid {
+  background: #2a2b30;
+}
+.hr-line.solid.grey {
+  background: var(--grey-color);
+}
+.dark-theme .hr-line.solid {
+  background: var(--white-color);
+}
+
+.primary-invert {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #2b6777 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #2b6777 100%
+  );
+}

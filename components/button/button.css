@@ -112,7 +112,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
 }
 .btn.icon-with-text span {
   position: absolute;

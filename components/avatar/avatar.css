@@ -3,6 +3,7 @@
 .avatar-with-image img {
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   max-inline-size: 100%;
   block-size: auto;
   aspect-ratio: 1/1;
