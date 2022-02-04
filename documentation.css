@@ -26,24 +26,24 @@
   padding: 2rem;
   padding-top: 3rem;
 }
-.documentation-section__main h1.title {
+.documentation-section__main .title {
   font-size: 3rem;
 }
 
-.documentation-section__main h3.subtitle {
+.documentation-section__main .subtitle {
   font-size: 1.5rem;
 }
-.documentation-section__main h5.js-heading {
+.documentation-section__main .js-heading {
   margin: 0.5rem auto;
 }
 
-.documentation-section__main section {
+.documentation-section__main {
   margin: 1.5rem auto;
 }
-.documentation-section__main section p.paragraph {
+.documentation-section__main .paragraph {
   margin: 1rem auto;
 }
-.documentation-section__main section .hr-line {
+.documentation-section__main .hr-line {
   margin-bottom: 1rem;
 }
 .documentation-section__aside ul {

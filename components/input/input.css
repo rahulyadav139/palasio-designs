@@ -1,9 +1,12 @@
 .input-field {
   border: 1.5px solid var(--grey-color);
   padding: 0.5rem;
-  border-radius: 0.5rem;
   outline: none;
   font-size: inherit;
+}
+
+.input-field .rounded-corner {
+  border-radius: 0.5rem;
 }
 
 .dark-theme .input-field {

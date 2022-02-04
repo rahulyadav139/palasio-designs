@@ -1,4 +1,4 @@
-//toggle theme action
+//toggle theme
 
 const checkbox = document.querySelector('.theme-toggle__checkbox');
 
@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
   }
 });
 
-//toggle live and code snippet
+//toggle live demo and code snippet
 
 const btnLiveDemo = document.querySelectorAll(
   '.component-container__actions__btn-live-demo'

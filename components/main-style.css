@@ -23,6 +23,7 @@
   --secondary-color-light: #3f5479;
   --secondary-color-dark: #162746;
 
+  /* alert colors */
   --red-bg-color: #bd1616, #ff1700;
   --yellow-bg-color: #ffb830, #ffc947;
   --green-bg-color: #80ed99, #57cc99;
@@ -30,7 +31,7 @@
   --red-color: #ff1700;
   --red-color-dark: #bd1616;
   --blue-color: #56b4ee;
-  -blue-color-dark: #1597e5;
+  --blue-color-dark: #1597e5;
   --green-color: #4caf50;
   --green-color-dark: #40a343;
   --yellow-color: #ffc947;

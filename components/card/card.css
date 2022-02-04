@@ -19,10 +19,10 @@
   gap: 0.3rem;
 }
 
-.ecom h1 {
+.ecom h1.brand {
   font-size: 1rem;
 }
-.ecom h2 {
+.ecom h2.title {
   font-size: 0.83rem;
 }
 
