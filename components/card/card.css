@@ -71,7 +71,7 @@
   aspect-ratio: 1/1;
 }
 
-.ecom .btn {
+.ecom .btn:not(.icon) {
   font-size: 0.75rem;
 }
 

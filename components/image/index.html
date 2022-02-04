@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palasio Designs</title>
 
-    <link rel="stylesheet" href="../../palasio-design.css" />
+    <link rel="stylesheet" href="../../palasio-designs.css" />
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
 
@@ -49,18 +49,17 @@
     <section class="documentation-section">
       <main class="documentation-section__main">
         <section>
-          <h1>Buttons</h1>
+          <h1 class="title">Image</h1>
           <p class="paragraph">
-            This component library provides ample customization for you project.
-            Button component comes in different style and use case as your
-            project demands. Just provide required class to button component and
-            make it styled for your project as you want.
+            Images can be responsive to fit the parent's width, and also can be
+            customized to be round shaped.
           </p>
-          <h3>Default Button</h3>
+          <h3 class="subtitle">Responsive Image</h3>
           <p class="paragraph">
-            Default button comes in flat style and dark color. You can get the
-            default style just providing <strong>"btn"</strong> class to the
-            component.
+            You can add class <span class="css-class">img-responsive</span> to
+            make your image fit the width of container. It's height will get
+            adjusted by keeping the aspect ratio same. If you want to change the
+            aspect ratio, you will have to crop the image.
           </p>
           <div class="component-container">
             <div class="component-container__actions">
@@ -77,6 +76,41 @@
                 class="img-responsive"
                 src="https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
               />
+            </div>
+
+            <div class="component-container__code-snippet">
+              <pre>
+                <code>
+<!-- responsive image -->
+
+<img
+  class="img-responsive"
+  src=""
+  alt=""
+/>
+                </code>
+              </pre>
+            </div>
+          </div>
+          <div class="hr-line fad"></div>
+
+          <h3 class="subtitle">Round Image</h3>
+          <p class="paragraph">
+            You can get round image by adding
+            <span class="css-class">img-responsive</span> along with
+            <span class="css-class">round</span>.
+          </p>
+          <div class="component-container">
+            <div class="component-container__actions">
+              <button
+                class="active component-container__actions__btn-live-demo"
+              >
+                Live Demo</button
+              ><button class="component-container__actions__btn-code-snippet">
+                Code Snippet
+              </button>
+            </div>
+            <div class="component-container__live-demo">
               <img
                 class="img-responsive round"
                 src="https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
@@ -84,18 +118,17 @@
             </div>
 
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/dd9YgQkvVyCTJ9wqU9Y5"
-                style="
-                  width: 100%;
-                  height: 115px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- responsive image with round shape -->
+
+<img
+  class="img-responsive round"
+  src=""
+  alt=""
+/>
+                </code>
+              </pre>
             </div>
           </div>
         </section>
@@ -116,10 +149,10 @@
                 <li><a href="../avatar/index.html">Avatar</a></li>
                 <li><a href="../alert/index.html">Alert</a></li>
                 <li><a href="../badge/index.html">Badge</a></li>
-                <li><a href="./index.html">Button</a></li>
-                <li><a href="">Card</a></li>
-                <li><a href="">Image</a></li>
-                <li><a href="">Input</a></li>
+                <li><a href="../button/index.html">Button</a></li>
+                <li><a href="../card/index.html">Card</a></li>
+                <li><a href="./index.html">Image</a></li>
+                <li><a href="../input/index.html">Input</a></li>
                 <li><a href="">Text Utilities</a></li>
                 <li><a href="">Lists</a></li>
                 <li><a href="">Navigation</a></li>
@@ -137,30 +170,36 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+ <footer class="footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
-      <div class="black-bg-theme hr-line"></div>
+      <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <a class="icon medium white"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a class="icon medium white"
-              ><i id="icon" class="fab fa-twitter"></i
+            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a class="icon medium white"
-              ><i id="icon" class="fab fa-linkedin-in"></i
+            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-linkedin-in"></i
             ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
+        </a>
       </div>
     </footer>
+    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
+    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   </body>
 </html>

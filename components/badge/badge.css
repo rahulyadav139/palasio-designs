@@ -7,7 +7,7 @@
 .badge-container .badge-status {
   position: absolute;
   display: inline-block;
-  border: 2px solid var(--white-color);
+  border: 0.125rem solid var(--white-color);
 }
 .badge-status.top {
   top: 0;
@@ -22,24 +22,24 @@
   bottom: 0;
 }
 .small ~ .badge-status {
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  margin: 1px;
+  margin: 0.0625rem;
 }
 
 .medium ~ .badge-status {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
-  margin: 6px;
+  margin: 0.375rem;
 }
 
 .large ~ .badge-status {
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
-  margin: 10px;
+  margin: 0.625rem;
 }
 .badge-status.online {
   background: var(--green-color);
@@ -57,7 +57,7 @@
   justify-content: center;
   align-items: center;
   background: var(--primary-color-dark);
-  border: 2px solid var(--white-color);
+  border: 0.125rem solid var(--white-color);
   color: var(--white-color);
 }
 
@@ -65,16 +65,16 @@
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
-  font-size: 0.5rem;
-  top: -0.75rem;
-  right: -0.75rem;
+  font-size: 0.4rem;
+  top: -0.6rem;
+  right: -0.6rem;
 }
 
 .icon.medium ~ .badge-number {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   top: -0.75rem;
   right: -0.75rem;
 }

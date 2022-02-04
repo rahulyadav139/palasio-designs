@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palasio Designs</title>
 
-    <link rel="stylesheet" href="../../palasio-design.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../../palasio-designs.css" />
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
     <script defer src="../../app.js"></script>
@@ -51,12 +59,12 @@
         <section>
           <h1 class="title">Card</h1>
           <p class="paragraph">
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before the final copy is available.
+           Card are used to show user related data collectively, like product details, social media post etc..
+
+
           </p>
           <h3 class="subtitle">E-commerce Card</h3>
+          <p class="paragraph">E-commerce card are flash card to show brief product details. Card functionality comes with just to add <span class="css-class">card</span> to wrapper container and you are good to go. If you want to specifically E-commerce card then add <span class="css-class">ecomm</span>. Copy below code and put your desired text and image and you will get E-commerce card.</p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -74,18 +82,12 @@
                     src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
                     alt="sample"
                   />
-                  <!-- <span class="badge highlight top left">-20%</span>
-
-                  <span class="badge bottom right"
-                    >4.4 <i class="fas fa-star"></i> | 123</span
-                  > -->
                 </div>
-
                 <div class="flex space-between">
                   <h1 class="brand">Impos Decor</h1>
-                  <span class="icon medium primary"
+                  <button class="btn icon medium primary"
                     ><i class="far fa-heart"></i
-                  ></span>
+                  ></button>
                 </div>
                 <h2 class="title">Vintage artifacts vase</h2>
                 <div class="price">
@@ -94,26 +96,37 @@
                 </div>
 
                 <button class="btn primary"><strong>Add</strong></button>
-
-                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
-                style="
-                  width: 100%;
-                  height: 258px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- e-commerce card -->
+
+<div class="card ecom">
+  <div class="image">
+    <img src="/" alt="sample" />
+  </div>
+  <div class="flex space-between">
+    <h1 class="brand">Impos Decor</h1>
+    <button class="icon medium primary"><i class="far fa-heart"></i></button>
+  </div>
+  <h2 class="title">Vintage artifacts vase</h2>
+  <div class="price">
+    <div class="price__old">$100</div>
+    <div class="price__new">$80</div>
+  </div>
+
+  <button class="btn primary"><strong>Add</strong></button>
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
+          <div class="hr-line fad"></div>
           <h3 class="subtitle">E-commerce Card with Shadow</h3>
+          <p class="paragraph">To get shadow effect on the card, add <span class="css-class">shadow</span> class to card container.</p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -131,18 +144,14 @@
                     src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
                     alt="sample"
                   />
-                  <!-- <span class="badge highlight top left">-20%</span>
-
-                  <span class="badge bottom right"
-                    >4.4 <i class="fas fa-star"></i> | 123</span
-                  > -->
+                 
                 </div>
 
                 <div class="flex space-between">
                   <h1 class="brand">Impos Decor</h1>
-                  <span class="icon medium primary"
+                  <button class="btn icon medium primary"
                     ><i class="far fa-heart"></i
-                  ></span>
+                  ></button>
                 </div>
                 <h2 class="title">Vintage artifacts vase</h2>
                 <div class="price">
@@ -156,22 +165,35 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
-                style="
-                  width: 100%;
-                  height: 258px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- e-commerce card with shadow-->
+
+<div class="card shadow ecom">
+  <div class="image">
+    <img src="/" alt="sample" />
+  </div>
+  <div class="flex space-between">
+    <h1 class="brand">Impos Decor</h1>
+    <button class="icon medium primary"><i class="far fa-heart"></i></button>
+  </div>
+  <h2 class="title">Vintage artifacts vase</h2>
+  <div class="price">
+    <div class="price__old">$100</div>
+    <div class="price__new">$80</div>
+  </div>
+
+  <button class="btn primary"><strong>Add</strong></button>
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
+           <div class="hr-line fad"></div>
 
           <h3 class="subtitle">E-commerce Card with Badge</h3>
+          <p class="paragraph">This library provides badge for E-commerce card. There are 2 type of badge, one is standard one and another one is highlighted in red color. You will get badge by adding badge container to card container and provide <span class="css-class">badge</span> class to badge container and place any where on the card by adding <span class="css-class">top, left, bottom, right</span> to badge container. If you want badge to be highlighted then add <span class="css-class">highlight</span> class. You can add multiple badge to an E-commerce card if you want. For better understanding view code snippet.</p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -210,26 +232,51 @@
 
                 <button class="btn primary"><strong>Add</strong></button>
 
-                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
+               
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
-                style="
-                  width: 100%;
-                  height: 258px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- e-commerce card with badge -->
+
+<div class="card ecom">
+  <div class="image">
+    <img src="/" alt="sample" />
+
+    <!-- badge containers -->
+
+    <!-- highlighted badge -->
+    <span class="badge highlight top left">-20%</span>
+
+    <!-- standard badge -->
+    <span class="badge bottom right">
+      4.4 <i class="fas fa-star"></i> | 123</span>
+
+  </div>
+  <div class="flex space-between">
+    <h1 class="brand">Impos Decor</h1>
+    <button class="icon medium primary">
+      <i class="far fa-heart"></i>
+    </button>
+  </div>
+  <h2 class="title">Vintage artifacts vase</h2>
+  <div class="price">
+    <div class="price__old">$100</div>
+    <div class="price__new">$80</div>
+  </div>
+
+  <button class="btn primary"><strong>Add</strong></button>
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
+           <div class="hr-line fad"></div>
 
           <h3 class="subtitle">E-commerce Card with Ribbon</h3>
+          <p class="paragraph">You will get ribbon to an E-commerce card by providing <span class="css-class">ribbon</span> class to card container. With providing ribbon class, you need to provide ribbon content. You can do that by adding an attribute <span class="css-class">ribbon-content</span> and provide desired content. For better understanding view code snippet.</p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -247,11 +294,7 @@
                     src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
                     alt="sample"
                   />
-                  <!-- <span class="badge highlight top left">-20%</span>
-
-                  <span class="badge bottom right"
-                    >4.4 <i class="fas fa-star"></i> | 123</span
-                  > -->
+                 
                 </div>
 
                 <div class="flex space-between">
@@ -267,27 +310,49 @@
                 </div>
 
                 <button class="btn primary"><strong>Add</strong></button>
-
-                <!-- <span class="overlay"><h4>out of stock</h4></span> -->
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
-                style="
-                  width: 100%;
-                  height: 258px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- card with ribbon -->
+
+<div class="card ecom ribbon" ribbon-content="Exclusive">
+  <div class="image">
+    <img src="/" alt="sample" />
+
+    <!-- badge containers -->
+
+    <!-- highlighted badge -->
+    <span class="badge highlight top left">-20%</span>
+
+    <!-- standard badge -->
+    <span class="badge bottom right">
+      4.4 <i class="fas fa-star"></i> | 123</span>
+
+  </div>
+  <div class="flex space-between">
+    <h1 class="brand">Impos Decor</h1>
+    <button class="icon medium primary">
+      <i class="far fa-heart"></i>
+    </button>
+  </div>
+  <h2 class="title">Vintage artifacts vase</h2>
+  <div class="price">
+    <div class="price__old">$100</div>
+    <div class="price__new">$80</div>
+  </div>
+
+  <button class="btn primary"><strong>Add</strong></button>
+</div>
+                </code>
+              </pre>
             </div>
           </div>
+           <div class="hr-line fad"></div>
 
-          <h3 class="subtitle">Simple Text Card</h3>
+          <h3 class="subtitle">Card with Text Overlay</h3>
+          <p class="paragraph">Get card with text overlay by adding overlay container to card container. You can set any overlay text. </p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -305,11 +370,6 @@
                     src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
                     alt="sample"
                   />
-                  <!-- <span class="badge highlight top left">-20%</span>
-
-                  <span class="badge bottom right"
-                    >4.4 <i class="fas fa-star"></i> | 123</span
-                  > -->
                 </div>
 
                 <div class="flex space-between">
@@ -330,21 +390,49 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/GXXO4XVXSdQd1vPxT43g"
-                style="
-                  width: 100%;
-                  height: 258px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- card with text-overlay -->
+
+<div class="card ecom">
+  <div class="image">
+    <img src="/" alt="sample" />
+
+    <!-- badge containers -->
+
+    <!-- highlighted badge -->
+    <span class="badge highlight top left">-20%</span>
+
+    <!-- standard badge -->
+    <span class="badge bottom right">
+      4.4 <i class="fas fa-star"></i> | 123</span>
+
+  </div>
+  <div class="flex space-between">
+    <h1 class="brand">Impos Decor</h1>
+    <button class="icon medium primary">
+      <i class="far fa-heart"></i>
+    </button>
+  </div>
+  <h2 class="title">Vintage artifacts vase</h2>
+  <div class="price">
+    <div class="price__old">$100</div>
+    <div class="price__new">$80</div>
+  </div>
+
+  <button class="btn primary"><strong>Add</strong></button>
+
+  <!-- overlay text container -->
+  <span class="overlay"><p>out of stock</p></span>
+</div>
+                </code>
+              </pre>
+                
             </div>
           </div>
-          <h3>Simple Text Card</h3>
+           <div class="hr-line fad"></div>
+          <h3 class="subtitle">Simple Text Card</h3>
+          <p class="paragraph">Simple text card can be achieved by providing <span class="css-class">text</span> class along with <span class="css-class">card</span> class to card container. </p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -357,7 +445,7 @@
             </div>
             <div class="component-container__live-demo">
               <div class="card text shadow">
-                <h1 class="title">Test</h1>
+                <h1 class="title">Title</h1>
                 <p>
                   In publishing and graphic design, Lorem ipsum is a placeholder
                   text commonly used to demonstrate the visual form of a
@@ -367,22 +455,25 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                style="
-                  width: 100%;
-                  height: 135px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- simple text card -->
+
+<div class="card text shadow">
+  <h1 class="title">Title</h1>
+  <p>
+    <!-- write card content -->
+  </p>
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
+           <div class="hr-line fad"></div>
 
-          <h3>Text Card with Dismiss</h3>
+          <h3 class="subtitle">Text Card with Dismiss</h3>
+          <p class="paragraph">If you want card with dismiss functionality, you can get that too. Just add any tag/button/icon with <span class="css-class">dismiss</span> class to card container. You don't need to write any javascript code to get dismiss functionality, just paste html structure and link this component library stylesheet. Isn't it simple. </p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -408,22 +499,31 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                style="
-                  width: 100%;
-                  height: 135px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- text card with dismiss button -->
+
+<div class="card text shadow">
+  <h1 class="title">Title</h1>
+  <p>
+    <!-- write card content -->
+  </p>
+
+  <!-- dismiss button -->
+
+  <button class="btn icon medium dismiss">
+    <i class="far fa-times-circle"></i>
+  </button>
+
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
-
-          <h3>Text Card with Actions</h3>
+ <div class="hr-line fad"></div>
+          <h3 class="subtitle">Text Card with Actions</h3>
+          <p class="paragraph">Sometimes you need a simple card with actions, you can get that too. Copy below code and put your desired text and you are good to go. </p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -436,7 +536,7 @@
             </div>
             <div class="component-container__live-demo">
               <div class="card text shadow">
-                <h1 class="title">Test</h1>
+                <h1 class="title">Title</h1>
                 <p>
                   In publishing and graphic design, Lorem ipsum is a placeholder
                   text commonly used to demonstrate the visual form of a
@@ -450,22 +550,28 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                style="
-                  width: 100%;
-                  height: 135px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+<!-- text card with dismiss actions -->
+
+<div class="card text shadow">
+  <h1 class="title">Title</h1>
+  <p>
+    <!-- write card content -->
+  </p>
+
+  <!-- card actions -->
+
+  <div class="flex end gap">
+    <button class="btn outline primary">Cancel</button>
+    <button class="btn primary">Submit</button>
+  </div>
+
+</div>
             </div>
           </div>
+           <div class="hr-line fad"></div>
 
-          <h3>Social Media Card</h3>
+          <h3 class="subtitle">Social Media Card</h3>
+          <p class="paragraph">Social Media Card is the one that contains an Avatar, Profile Name, Image, and Description.</p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -480,7 +586,7 @@
               <div class="card shadow social">
                 <div class="flex space-between align-center">
                   <div class="flex gap align-center">
-                    <div class="avatar-with-image small">
+                    <div class="avatar small">
                       <img src="../../Assets/testimonial.jpg" />
                     </div>
                     <div class="flex col">
@@ -488,27 +594,27 @@
                       <div class="time">Today</div>
                     </div>
                   </div>
-                  <span class="icon medium"
+                  <button class="btn icon medium primary"
                     ><i class="fas fa-ellipsis-v"></i
-                  ></span>
+                  ></button>
                 </div>
                 <div class="image">
                   <img
-                    class="image-responsive"
+                    class="img-responsive"
                     src="../../Assets/stil-b4DtZhxJjPM-unsplash.jpg"
                   />
                 </div>
                 <div class="actions flex gap">
-                  <span class="icon medium primary"
+                  <button class="btn icon medium primary"
                     ><i class="far fa-heart"></i
-                  ></span>
-                  <span class="icon medium primary"
+                  ></button>
+                  <button class="btn icon medium primary"
                     ><i class="far fa-comment"></i
-                  ></span>
+                  ></button>
 
-                  <span class="icon medium primary"
+                  <button class="btn icon medium primary"
                     ><i class="fas fa-share-alt"></i
-                  ></span>
+                  ></button>
                 </div>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
@@ -519,21 +625,59 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                style="
-                  width: 100%;
-                  height: 135px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+               <code>
+<!-- social media card -->
+
+<div class="card shadow social">
+  <div class="flex space-between align-center">
+    <div class="flex gap align-center">
+      <div class="avatar small">
+        <!-- avatar image -->
+        <img src="/" alt="" />
+      </div>
+      <div class="flex col">
+        <div class="user">Michael</div>
+        <div class="time">Today</div>
+      </div>
+    </div>
+    <button class="btn icon medium primary">
+      <i class="fas fa-ellipsis-v"></i>
+    </button>
+  </div>
+  <div class="image">
+    <!-- card image -->
+    <img
+      class="img-responsive"
+      src="/"
+      alt=""
+    />
+  </div>
+  <div class="actions flex gap">
+    <button class="btn icon medium primary">
+      <i class="far fa-heart"></i>
+    </button>
+    <button class="btn icon medium primary">
+      <i class="far fa-comment"></i>
+    </button>
+
+    <button class="btn icon medium primary">
+      <i class="fas fa-share-alt"></i>
+    </button>
+  </div>
+  <p>
+    <!-- card caption -->
+  </p>
+  <div class="actions"></div>
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
-          <h3>Horizontal Card</h3>
+           <div class="hr-line fad"></div>
+          <h3 class="subtitle">Responsive Card</h3>
+          <p class="paragraph">This is a responsive card. Based on screen size/orientation it changes to vertical/horizontal card. </p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -545,10 +689,11 @@
               </button>
             </div>
             <div class="component-container__live-demo">
+              
               <div class="card shadow product-detail">
                 <div class="image">
                   <img
-                    class="image-responsive"
+                    class="img-responsive"
                     src="https://i.picsum.photos/id/529/536/354.jpg?hmac=ItKRFzeMMS8zYbKrxh5qmJh9oLug_ZI8pqBB2z4kos0"
                   />
                 </div>
@@ -575,76 +720,42 @@
               </div>
             </div>
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                style="
-                  width: 100%;
-                  height: 135px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- product details card -->
+
+<div class="card shadow product-detail">
+  <div class="image">
+    <!-- card image -->
+    <img
+      class="img-responsive"
+      src="/"
+      alt=""
+    />
+  </div>
+  <div class="product-detail__text">
+    <h1 class="brand">ZAPATOZ</h1>
+    <h2 class="title">Loud Speaker</h2>
+    <div class="rating">4.4 <i class="fas fa-star"></i> | 3.9k Ratings</div>
+    <div class="hr-line solid grey"></div>
+    <div class="price flex gap">
+      <div class="price__old">$100</div>
+      <div class="price__new">$80</div>
+    </div>
+    <div class="text-details">inclusive of all taxes</div>
+    <div class="buttons">
+      <button class="btn primary icon-with-text">
+        Add to Cart
+        <span><i class="fas fa-shopping-cart"></i></span>
+      </button>
+      <button class="btn outline primary">Wishlist</button>
+    </div>
+  </div>
+</div>
+
+                </code>
+              </pre>
             </div>
-          </div>
-          <h3>Vertical Card</h3>
-          <div class="component-container">
-            <div class="component-container__actions">
-              <button
-                class="active component-container__actions__btn-live-demo"
-              >
-                Live Demo</button
-              ><button class="component-container__actions__btn-code-snippet">
-                Code Snippet
-              </button>
-            </div>
-            <div class="component-container__live-demo">
-              <div class="card shadow product-detail vertical">
-                <div class="image">
-                  <img
-                    class="image-responsive"
-                    src="https://i.picsum.photos/id/529/536/354.jpg?hmac=ItKRFzeMMS8zYbKrxh5qmJh9oLug_ZI8pqBB2z4kos0"
-                  />
-                </div>
-                <div class="product-detail__text">
-                  <h1 class="brand">ZAPATOZ</h1>
-                  <h2 class="title">Loud Speaker</h2>
-                  <div class="rating">
-                    4.4 <i class="fas fa-star"></i> | 3.9k Ratings
-                  </div>
-                  <div class="hr-line solid grey"></div>
-                  <div class="price flex gap">
-                    <div class="price__old">$100</div>
-                    <div class="price__new">$80</div>
-                  </div>
-                  <div class="text-details">inclusive of all taxes</div>
-                  <div class="buttons">
-                    <button class="btn primary icon-with-text">
-                      Add to Cart
-                      <span><i class="fas fa-shopping-cart"></i></span>
-                    </button>
-                    <button class="btn outline primary">Wishlist</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/jI6EczHvrwu2iAjR8eul"
-                style="
-                  width: 100%;
-                  height: 135px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </div>
-          </div>
         </section>
       </main>
       <!-- sidebar -->
@@ -664,9 +775,9 @@
                 <li><a href="../alert/index.html">Alert</a></li>
                 <li><a href="../badge/index.html">Badge</a></li>
                 <li><a href="../button/index.html">Button</a></li>
-                <li><a href="">Card</a></li>
-                <li><a href="">Image</a></li>
-                <li><a href="">Input</a></li>
+                <li><a href="./index.html">Card</a></li>
+                <li><a href="../image/index.html">Image</a></li>
+                <li><a href="../input/index.html">Input</a></li>
                 <li><a href="">Text Utilities</a></li>
                 <li><a href="">Lists</a></li>
                 <li><a href="">Navigation</a></li>
@@ -684,32 +795,36 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+ <footer class="footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
-      <div class="black-bg-theme hr-line"></div>
+      <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-github"></i
-            ></span>
+            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-github"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-twitter"></i
-            ></span>
+            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-linkedin-in"></i
-            ></span>
+            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-linkedin-in"></i
+            ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
+        </a>
       </div>
     </footer>
+    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
+    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   </body>
 </html>

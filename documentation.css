@@ -29,9 +29,7 @@
 .documentation-section__main h1.title {
   font-size: 3rem;
 }
-/* .documentation-section__main h2.subtitle {
-  font-size: 2.5rem;
-} */
+
 .documentation-section__main h3.subtitle {
   font-size: 1.5rem;
 }
@@ -44,6 +42,9 @@
 }
 .documentation-section__main section p.paragraph {
   margin: 1rem auto;
+}
+.documentation-section__main section .hr-line {
+  margin-bottom: 1rem;
 }
 .documentation-section__aside ul {
   list-style: none;
@@ -111,4 +112,56 @@
 .component-container__actions button.active {
   background: var(--primary-color-dark);
   color: var(--white-color);
+}
+
+/* code snippet height */
+
+pre code {
+  max-height: 22rem;
+  overflow-y: auto;
+}
+.menu-toggler {
+  visibility: hidden;
+}
+
+.menu-toggler.icon.float {
+  margin: 3rem;
+  width: 6rem;
+  height: 6rem;
+}
+@media only screen and (max-width: 414px) {
+  .menu-toggler-show,
+  .menu-toggler-hide {
+    transition: all 0.2s ease-in-out;
+  }
+  .menu-toggler-show {
+    visibility: visible;
+  }
+  .documentation-section {
+    display: block;
+    margin: auto;
+  }
+  .documentation-section__main {
+    padding: 5rem;
+    width: 100%;
+  }
+  .documentation-section__aside {
+    visibility: hidden;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5rem;
+  }
+
+  .documentation-section__aside li {
+    padding-left: 0;
+  }
+
+  .get-started-footer {
+    position: fixed;
+    bottom: 0;
+  }
 }

@@ -33,30 +33,30 @@
 }
 
 .hr-line {
-  height: 1px;
+  height: 2px;
   width: 100%;
 }
 
 .hr-line.fad {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(25, 25, 25, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
+    var(--white-color) 0%,
+    var(--black-color) 50%,
+    var(--white-color) 100%
   );
 }
 
 .dark-theme .hr-line.fad {
   background: linear-gradient(
     90deg,
-    #2a2b30 0%,
-    rgba(255, 255, 255, 1) 50%,
-    #2a2b30 100%
+    var(--dark-theme-bg-color) 0%,
+    var(--white-color) 50%,
+    var(--dark-theme-bg-color) 100%
   );
 }
 
 .hr-line.solid {
-  background: #2a2b30;
+  background: var(--dark-theme-bg-color);
 }
 .hr-line.solid.grey {
   background: var(--grey-color);
@@ -65,13 +65,23 @@
   background: var(--white-color);
 }
 
-.primary-invert {
-  height: 2px;
-  width: 100%;
+.hr-line.fad.primary-invert {
   background: linear-gradient(
     90deg,
-    #2b6777 0%,
-    rgba(255, 255, 255, 1) 50%,
-    #2b6777 100%
+    var(--primary-color-dark) 0%,
+    var(--white-color) 50%,
+    var(--primary-color-dark) 100%
   );
+}
+
+/* highlight class */
+
+.css-class {
+  background-color: var(--grey-color-light);
+  font-style: italic;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+.dark-theme .css-class {
+  background-color: var(--black-color);
 }

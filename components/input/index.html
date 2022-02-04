@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palasio Designs</title>
 
-    <link rel="stylesheet" href="../../palasio-design.css" />
+    <link rel="stylesheet" href="../../palasio-designs.css" />
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
 
-    <script defer src="../../app.js"></script>
     <script defer src="./input.js"></script>
+    <script defer src="../../app.js"></script>
+    
   </head>
   <body>
     <!-- header -->
@@ -52,16 +53,15 @@
         <section>
           <h1 class="title">Input</h1>
           <p class="paragraph">
-            This component library provides ample customization for you project.
-            Button component comes in different style and use case as your
-            project demands. Just provide required class to button component and
-            make it styled for your project as you want.
+            Inputs are necessary for user interaction with the website. Inputs
+            are used to take information from the user, and then save the data
+            to the server, accordingly.
           </p>
-          <h3 class="subtitle">Default Focus</h3>
+          <h3 class="subtitle">Responsive Input Field</h3>
           <p class="paragraph">
-            Default button comes in flat style and dark color. You can get the
-            default style just providing <strong>"btn"</strong> class to the
-            component.
+            The input shows response when it is in focus state. You can achieve
+            that aby adding <span class="css-class">input-field</span> class to
+            input element. This will work for text area tag too.
           </p>
           <div class="component-container">
             <div class="component-container__actions">
@@ -79,26 +79,24 @@
             </div>
 
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/dd9YgQkvVyCTJ9wqU9Y5"
-                style="
-                  width: 100%;
-                  height: 115px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+             <pre>
+               <code>
+<!-- standard input field with focus effect -->
+
+<input class="input-field" type="text" />
+<textarea class="input-field" type="text"></textarea>
+ 
+               </code>
+             </pre>
             </div>
           </div>
+          <div class="hr-line fad"></div>
 
           <h3 class="subtitle">Input on Error</h3>
           <p class="paragraph">
-            Default button comes in flat style and dark color. You can get the
-            default style just providing <strong>"btn"</strong> class to the
-            component.
+            If input field doesn't full fill validate condition, it shows error
+            in response. You can achieve that by adding
+            <span class="css-class">error</span> class to input field.
           </p>
           <div class="component-container">
             <div class="component-container__actions">
@@ -116,26 +114,24 @@
             </div>
 
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/dd9YgQkvVyCTJ9wqU9Y5"
-                style="
-                  width: 100%;
-                  height: 115px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- standard input field with error effect -->
+
+<input class="input-field error" type="text" />
+<textarea class="input-field error" type="text"></textarea>
+
+                </code>
+
+              </pre>
             </div>
           </div>
-
-          <h3 class="subtitle">Search Input</h3>
+          <div class="hr-line fad"></div>
+          <h3 class="subtitle">Input with Icon Label</h3>
           <p class="paragraph">
-            Default button comes in flat style and dark color. You can get the
-            default style just providing <strong>"btn"</strong> class to the
-            component.
+            Get input with icon as label by adding
+            <span class="css-class">input-field-icon</span> to wrapper. You
+            choose any font awesome/bootstrap icon for icon label.
           </p>
           <div class="component-container">
             <div class="component-container__actions">
@@ -148,27 +144,28 @@
               </button>
             </div>
             <div class="component-container__live-demo">
-              <form class="search-input">
+              <div class="input-field-icon">
                 <label
                   ><span class="icon small"><i class="bi bi-search"></i></span
                   ><input placeholder="Search" type="text"
                 /></label>
-              </form>
+              </div>
             </div>
 
             <div class="component-container__code-snippet">
-              <iframe
-                src="https://carbon.now.sh/embed/dd9YgQkvVyCTJ9wqU9Y5"
-                style="
-                  width: 100%;
-                  height: 115px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+                <code>
+<!-- input field with icon label -->
+
+<div class="input-field-icon">
+  <label
+    ><span class="icon small"><i class="bi bi-search"></i></span
+    ><input placeholder="Search" type="text"
+  /></label>
+</div>
+
+                </code>
+              </pre>
             </div>
           </div>
         </section>
@@ -189,10 +186,10 @@
                 <li><a href="../avatar/index.html">Avatar</a></li>
                 <li><a href="../alert/index.html">Alert</a></li>
                 <li><a href="../badge/index.html">Badge</a></li>
-                <li><a href="./index.html">Button</a></li>
-                <li><a href="">Card</a></li>
-                <li><a href="">Image</a></li>
-                <li><a href="">Input</a></li>
+                <li><a href="../button/index.html">Button</a></li>
+                <li><a href="../card/index.html">Card</a></li>
+                <li><a href="../image/index.html">Image</a></li>
+                <li><a href="./index.html">Input</a></li>
                 <li><a href="">Text Utilities</a></li>
                 <li><a href="">Lists</a></li>
                 <li><a href="">Navigation</a></li>
@@ -210,30 +207,36 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+   <footer class="footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
-      <div class="black-bg-theme hr-line"></div>
+      <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <a class="icon medium white"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a class="icon medium white"
-              ><i id="icon" class="fab fa-twitter"></i
+            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a class="icon medium white"
-              ><i id="icon" class="fab fa-linkedin-in"></i
+            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-linkedin-in"></i
             ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
+        </a>
       </div>
     </footer>
+    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
+    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   </body>
 </html>

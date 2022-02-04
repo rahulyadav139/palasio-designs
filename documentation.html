@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palasio Design</title>
+    <title>Palasio Designs</title>
 
-    <link rel="stylesheet" href="./palasio-design.css" />
+    <link rel="stylesheet" href="./palasio-designs.css" />
     <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./documentation.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script defer src="./app.js"></script>
   </head>
@@ -50,12 +58,23 @@
     <section class="documentation-section">
       <main class="documentation-section__main">
         <section id="getting-started">
-          <h1>Getting Started</h1>
+          <h1 class="title">Getting Started</h1>
           <p class="paragraph">
             Copy and paste the code in the head tag of your html document. So
             that you can style your components by just adding class names to
             your html elements.
           </p>
+          <pre>
+            <code>
+<!-- Just paste link in head element -->
+
+<link
+  rel="stylesheet"
+  href="https://hardcore-gates-ad5554.netlify.app/palasio-design.css"
+/>
+
+            </code>
+          </pre>
         </section>
       </main>
       <!-- sidebar -->
@@ -76,8 +95,8 @@
                 <li><a href="./components/badge/index.html">Badge</a></li>
                 <li><a href="./components/button/index.html">Buttons</a></li>
                 <li><a href="./components/card/index.html">Card</a></li>
-                <li><a href="">Image</a></li>
-                <li><a href="">Input</a></li>
+                <li><a href="./components/image/index.html">Image</a></li>
+                <li><a href="./components/input/index.html">Input</a></li>
                 <li><a href="">Text Utilities</a></li>
                 <li><a href="">Lists</a></li>
                 <li><a href="">Navigation</a></li>
@@ -95,32 +114,36 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+  <footer class="footer get-started-footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
-      <div class="black-bg-theme hr-line"></div>
+      <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-github"></i
-            ></span>
+            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-github"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-twitter"></i
-            ></span>
+            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-linkedin-in"></i
-            ></span>
+            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-linkedin-in"></i
+            ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
+        </a>
       </div>
     </footer>
+    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
+    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   </body>
 </html>

@@ -35,12 +35,35 @@ btnCodeSnippet.forEach(el => {
   });
 });
 
-//dismiss alert
+//highlight js
 
-const btnDismissAlert = document.querySelectorAll('.btn-dismiss-alert');
-
-btnDismissAlert.forEach(el => {
-  el.addEventListener('click', e => {
-    e.target.parentNode.style.display = 'none';
+document.addEventListener('DOMContentLoaded', event => {
+  document.querySelectorAll('pre code').forEach(el => {
+    el.innerHTML = el.innerHTML
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;')
+      .trim();
+    hljs.highlightElement(el);
   });
+});
+
+// toggle sidebar in mobile mode
+
+const sidebar = document.querySelector('.documentation-section__aside');
+
+const btnSidebarShow = document.querySelector('.menu-toggler-show');
+
+const btnSidebarHide = document.querySelector('.menu-toggler-hide');
+
+btnSidebarShow.addEventListener('click', () => {
+  btnSidebarHide.style.visibility = 'visible';
+  sidebar.style.visibility = 'visible';
+});
+
+btnSidebarHide.addEventListener('click', () => {
+  btnSidebarHide.style.visibility = 'hidden';
+  sidebar.style.visibility = 'hidden';
 });

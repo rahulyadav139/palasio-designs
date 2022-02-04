@@ -15,10 +15,7 @@
   position: relative;
 }
 
-.alert .btn-dismiss-alert {
-  display: none;
-}
-.alert-with-dismiss .btn-dismiss-alert {
+.alert.dismiss .btn-dismiss-alert {
   display: inline-block;
   cursor: pointer;
   position: absolute;
@@ -38,37 +35,37 @@
   line-height: 0;
 }
 
-.alert .alert-content__title {
+.alert .alert-title {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-.alert .alert-content__details {
+.alert .alert-details {
   font-size: 0.8rem;
 }
 .alert .btn-dismiss-alert {
   font-size: 1.5rem;
 }
-.info-alert .alert-icon {
+.alert.info .alert-icon {
   background: linear-gradient(45deg, var(--blue-bg-color));
 }
-.info-alert .alert-content__title {
+.alert.info .alert-title {
   color: var(--blue-color);
 }
-.success-alert .alert-icon {
+.alert.success .alert-icon {
   background: linear-gradient(45deg, var(--green-bg-color));
 }
-.success-alert .alert-content__title {
+.alert.success .alert-title {
   color: var(--green-color);
 }
-.update-alert .alert-icon {
+.alert.update .alert-icon {
   background: linear-gradient(45deg, var(--yellow-bg-color));
 }
-.update-alert .alert-content__title {
+.alert.update .alert-title {
   color: var(--yellow-color);
 }
-.danger-alert .alert-icon {
+.alert.danger .alert-icon {
   background: linear-gradient(45deg, var(--red-bg-color));
 }
-.danger-alert .alert-content__title {
+.alert.danger .alert-title {
   color: var(--red-color);
 }

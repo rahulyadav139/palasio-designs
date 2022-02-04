@@ -5,6 +5,11 @@
   outline: none;
 }
 
+.dark-theme .input-field {
+  border-color: var(--grey-color);
+  background: transparent;
+}
+
 .input-field:focus {
   border-color: var(--input-border-color);
   background: var(--input-bg-color);
@@ -19,14 +24,17 @@
   background: var(--input-error-bg-color);
 }
 
-.search-input {
+.input-field-icon {
   border: 1.5px solid var(--input-border-color);
   padding: 0.2rem 0.4rem;
   border-radius: 0.5rem;
   vertical-align: middle;
 }
+.input-field-icon label span {
+  color: var(--input-border-color);
+}
 
-.search-input input {
+.input-field-icon input {
   border: none;
   outline: none;
   padding: 0.5rem;

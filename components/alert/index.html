@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palasio Design</title>
-  
-    <link rel="stylesheet" href="../../palasio-design.css" />
+    <title>Palasio Designs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../../palasio-designs.css" />
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
+    <script defer src="./alert.js"></script>
+
     <script defer src="../../app.js"></script>
   </head>
   <body>
@@ -46,14 +55,13 @@
     <section class="documentation-section">
       <main class="documentation-section__main">
         <section id="alerts">
-          <h1>Alerts</h1>
+          <h1 class="title">Alert</h1>
           <p class="paragraph">
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before the final copy is available.
+            Alerts are used to attract user's attention for important information without interrupting the user's flow.
           </p>
-          <h3>Standard Alert</h3>
+          <h3 class="subtitle">Standard Alert</h3>
+          <p class="paragraph">There are 4 different types of alert available in this library. Add specific class to get desire alert. Classes are <span class="css-class">info</span>, <span class="css-class">success</span>, <span class="css-class">update</span> and <span class="css-class">danger</span>. You can customize alert what you want with setting different icon with different alert. Put icon under <span class="css-class">alert-icon</span> class span.
+          You can copy html part from below code snippet.</p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
@@ -64,20 +72,18 @@
                 Code Snippet
               </button>
             </div>
-            <div
-              class="component-container__live-demo"
-            >
+            <div class="component-container__live-demo">
               <!-- standard alert -->
 
               <!-- information alert -->
-              <div class="alert info-alert">
+              <div class="alert info">
                 <span class="alert-icon"
                   ><i class="bi bi-info-circle"></i
                 ></span>
 
                 <div>
-                  <h5 class="alert-content__title">Update Information</h5>
-                  <p class="alert-content__details">
+                  <h5 class="alert-title">Update Information</h5>
+                  <p class="alert-details">
                     To extend the sidebar to the bottom of the viewport
                   </p>
                 </div>
@@ -85,14 +91,14 @@
 
               <!-- success alert -->
 
-              <div class="alert success-alert">
+              <div class="alert success">
                 <span class="alert-icon"
                   ><i class="bi bi-check-circle"></i
                 ></span>
 
                 <div>
-                  <h5 class="alert-content__title">Successful Update</h5>
-                  <p class="alert-content__details">
+                  <h5 class="alert-title">Successful Update</h5>
+                  <p class="alert-details">
                     To extend the sidebar to the bottom of the viewport
                   </p>
                 </div>
@@ -100,14 +106,14 @@
 
               <!-- update alert -->
 
-              <div class="alert update-alert">
+              <div class="alert update">
                 <span class="alert-icon"
                   ><i class="bi bi-exclamation-circle"></i
                 ></span>
 
                 <div>
-                  <h5 class="alert-content__title">Update Information</h5>
-                  <p class="alert-content__details">
+                  <h5 class="alert-title">Update Information</h5>
+                  <p class="alert-details">
                     To extend the sidebar to the bottom of the viewport
                   </p>
                 </div>
@@ -115,61 +121,75 @@
 
               <!-- danger alert -->
 
-              <div class="alert danger-alert">
+              <div class="alert danger">
                 <span class="alert-icon"><i class="bi bi-x-circle"></i></span>
                 <div>
-                  <h5 class="alert-content__title">Can't Update</h5>
-                  <p class="alert-content__details">
+                  <h5 class="alert-title">Can't Update</h5>
+                  <p class="alert-details">
                     To extend the sidebar to the bottom of the viewport
                   </p>
                 </div>
               </div>
             </div>
 
-            <div
-              class="component-container__code-snippet"
-            >
-              <iframe
-                src="https://carbon.now.sh/embed/etW0RPDTP2faPOjcEhhK"
-                style="
-                  width: 100%;
-                  height: 350px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+            <div class="component-container__code-snippet">
+              <pre>
+              <code class="html">
+<!-- alert structure -->
+
+<div class="alert info">
+  <span class="alert-icon"><i class="bi bi-info-circle"></i></span>
+  <div>
+    <h5 class="alert-title">Update Information</h5>
+    <p class="alert-details">
+      To extend the sidebar to the bottom of the viewport
+    </p>
+  </div>
+</div>
+<!-- icons for different alert -->
+
+<!-- info -->
+<i class="bi bi-info-circle"></i>
+
+<!-- success -->
+<i class="bi bi-check-circle"></i>
+
+<!-- update -->
+<i class="bi bi-exclamation-circle"></i>
+
+<!-- danger -->
+<i class="bi bi-x-circle"></i>
+
+
+              </code>
+            </pre>
             </div>
           </div>
-          <h3>Alert with Dismiss Button</h3>
+          <div class="hr-line fad"></div>
+          <h3 class="subtitle">Alert with Dismiss Button</h3>
+          <p class="paragraph">Add class <span class="css-class">dismiss</span> to add dismiss functionality to the alert. You can change dismiss button icon as per your choice. Add desired icon under <span class="css-class">btn-dismiss-alert</span> span. </p>
           <div class="component-container">
             <div class="component-container__actions">
               <button
                 class="active component-container__actions__btn-live-demo"
               >
                 Live Demo</button
-              ><button
-                class="component-container__actions__btn-code-snippet"
-              >
+              ><button class="component-container__actions__btn-code-snippet">
                 Code Snippet
               </button>
             </div>
 
-            <div
-              class="component-container__live-demo"
-            >
+            <div class="component-container__live-demo">
               <!-- alert with dismiss button -->
 
-              <div class="alert alert-with-dismiss info-alert">
+              <div class="alert info dismiss">
                 <span class="alert-icon"
                   ><i class="bi bi-info-circle"></i
                 ></span>
 
                 <div>
-                  <h5 class="alert-content__title">Update Information</h5>
-                  <p class="alert-content__details">
+                  <h5 class="alert-title">Update Information</h5>
+                  <p class="alert-details">
                     To extend the sidebar to the bottom of the viewport
                   </p>
                 </div>
@@ -177,34 +197,37 @@
                 <span class="btn-dismiss-alert"><i class="bi bi-x"></i></span>
               </div>
             </div>
-            <div
-              class="component-container__code-snippet"
-            >
-              <iframe
-                src="https://carbon.now.sh/embed/JqVBnknDAEpgQO5tp7hV"
-                style="
-                  width: 100%;
-                  height: 381px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+            <div class="component-container__code-snippet">
+              <pre>
+              <code class="html">
+
+<div class="alert info">
+  <span class="alert-icon"><i class="bi bi-info-circle"></i></span>
+  <div>
+    <h5 class="alert-title">Update Information</h5>
+    <p class="alert-details">
+      To extend the sidebar to the bottom of the viewport
+    </p>
+  </div>
+  <!-- alert dismiss button -->
+  <span class="btn-dismiss-alert"><i class="bi bi-x"></i></span>
+</div>
+
+              </code>
+            </pre>
               <h5 class="js-heading">JavaScript:</h5>
-              <iframe
-                src="https://carbon.now.sh/embed/R5Mg8DTHKFrm06cyHVy4"
-                style="
-                  width: 100%;
-                  height: 217px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <pre>
+               <code class="js">
+                 //alert dismiss functionality
+
+const btnDismiss = document.querySelector('.btn-dismiss-alert');
+const alert = document.querySelector('.alert');
+
+btnDismiss.addEventListener('click', () => {
+  alert.style.display = 'none';
+});
+               </code>
+             </pre>
             </div>
           </div>
         </section>
@@ -226,9 +249,9 @@
                 <li><a href="./index.html">Alert</a></li>
                 <li><a href="../badge/index.html">Badge</a></li>
                 <li><a href="../button/index.html">Buttons</a></li>
-                <li><a href="">Card</a></li>
-                <li><a href="">Image</a></li>
-                <li><a href="">Input</a></li>
+                <li><a href="../card/index.html">Card</a></li>
+                <li><a href="../image/index.html">Image</a></li>
+                <li><a href="../input/index.html">Input</a></li>
                 <li><a href="">Text Utilities</a></li>
                 <li><a href="">Lists</a></li>
                 <li><a href="">Navigation</a></li>
@@ -246,32 +269,36 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+  <footer class="footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
-      <div class="black-bg-theme hr-line"></div>
+      <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-github"></i
-            ></span>
+            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-github"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-twitter"></i
-            ></span>
+            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-linkedin-in"></i
-            ></span>
+            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
+              ><i  class="fab fa-linkedin-in"></i
+            ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
+        </a>
       </div>
     </footer>
+    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
+    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   </body>
 </html>

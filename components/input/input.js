@@ -1,4 +1,4 @@
-const searchContainer = document.querySelector('.search-input');
+const searchContainer = document.querySelector('.input-field-icon');
 const searchInputField = searchContainer.querySelector('input');
 
 searchInputField.addEventListener('focus', () => {
