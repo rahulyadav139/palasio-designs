@@ -30,14 +30,15 @@
   padding: 0.2rem 0.4rem;
   border-radius: 0.5rem;
   vertical-align: middle;
-  font-size: inherit;
 }
 .input-field-icon label span {
   color: var(--input-border-color);
+  font-size: inherit;
 }
 
 .input-field-icon input {
   border: none;
   outline: none;
   padding: 0.5rem;
+  font-size: inherit;
 }
