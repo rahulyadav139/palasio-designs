@@ -1,0 +1,78 @@
+/* heading */
+
+.heading-1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.heading-4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.heading-5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.heading-6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* text size */
+
+.text-large {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+.text-regular {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.text-small {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+/* text styles */
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+.text-strike {
+  text-decoration: line-through;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-grey {
+  color: var(--grey-color);
+}
+.text-highlight {
+  background: var(--grey-color-light);
+  padding: 0 0.5rem;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-primary-dark {
+  color: var(--primary-color-dark);
+}
+.text-white {
+  color: var(--white-color);
+}
+.text-underline {
+  text-decoration: underline;
+}
