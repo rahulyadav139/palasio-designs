@@ -31,17 +31,18 @@
 .input-field-icon {
   border: 1.5px solid var(--input-border-color);
   padding: 0.2rem 0.4rem;
-  border-radius: 0.5rem;
-  vertical-align: middle;
 }
+.input-field-icon.rounded-corner {
+  border-radius: 0.5rem;
+}
+
 .input-field-icon label span {
   color: var(--input-border-color);
-  font-size: inherit;
 }
 
 .input-field-icon input {
   border: none;
   outline: none;
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   font-size: inherit;
 }

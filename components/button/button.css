@@ -170,7 +170,6 @@
   color: var(--std-font-color);
   background: none;
   line-height: 0;
-  vertical-align: middle;
 }
 .icon.primary {
   color: var(--primary-color);
