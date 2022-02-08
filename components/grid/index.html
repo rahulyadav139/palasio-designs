@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
 
-    <script defer src="./toast.js"></script>
     <script defer src="../../app.js"></script>
   </head>
   <body>
@@ -51,16 +50,14 @@
 
     <section class="documentation-section">
       <main class="documentation-section__main">
-        <h1 class="title">Toast</h1>
+        <h1 class="title">Grid</h1>
         <p class="paragraph">
-          Push notifications to your visitors with a toast, a lightweight and
-          easily customizable alert message.
+          Use grid when you want sections in view. Check below some examples of
+          side by side cards.
         </p>
-        <h3 class="subtitle">Toast Based on the Situation</h3>
+        <h3 class="subtitle">Grid 50-50</h3>
         <p class="paragraph">
-          This library provides 3 different types of toasts. Add class
-          <span class="css-class">success, danger, loading</span> to get desired
-          one for your project.
+          Add grid-50-50-layout class on wrapper div which is wrapping 2 divs.
         </p>
         <div class="component-container">
           <div class="component-container__actions">
@@ -70,57 +67,40 @@
               Code Snippet
             </button>
           </div>
-
           <div class="component-container__live-demo">
-            <div>
-              <div class="toast success show-mode">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Saved
+            <div class="grid g-50-50">
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/582/536/354.jpg?hmac=yl_995o4eDi7GMlFYMZcpu_DHFYjuA0g83BuhpHyGiI"
+                  alt="grid-img-1"
+                />
               </div>
-              <div class="toast danger show-mode">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Not Saved! Try again later.
-              </div>
-              <div class="toast loading show-mode">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Saving to server...
-              </div>
-
-              <div id="toast" class="toast success hidden">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Saved
-              </div>
-
-              <div class="flex center">
-                <button class="btn toast-test">Test Toast</button>
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/134/536/354.jpg?hmac=GqngKpJ4MNwWb4KIR11yok3yVmLUyrVIYAX2E37h4dA"
+                  alt="grid-img-1"
+                />
               </div>
             </div>
           </div>
 
           <div class="component-container__code-snippet">
             <script type="text/plain" class="line-numbers language-markup">
-              <!-- toast based on the situation -->
-              <div class="toast danger">
-                <span class="icon small white"><i class="fas fa-bell"></i></span>
-                Not Saved! Try again later.
+              <!-- grid 50-50 -->
+
+              <div class="grid g-50-50">
+                <!-- content -->
               </div>
             </script>
           </div>
         </div>
         <div class="hr-line fad"></div>
 
-        <h3 class="subtitle">Toast with Dismiss Button</h3>
+        <h3 class="subtitle">Grid 70-30</h3>
         <p class="paragraph">
-          This toast has dismiss button. It doesn't disappear automatically,
-          user needs to dismiss it. Copy HTML to get this.
+          Add grid-70-30-layout class on wrapper div which is wrapping 2 divs.
         </p>
         <div class="component-container">
           <div class="component-container__actions">
@@ -131,31 +111,72 @@
             </button>
           </div>
           <div class="component-container__live-demo">
-            <div class="snackbar shadow hidden">
-              <p>Can't send photo. Retry in 5 seconds.</p>
-              <div class="buttons">
-                <button>RETRY</button>
-                <button class="btn icon medium white btn-snackbar-dismiss">
-                  <i class="fas fa-times"></i>
-                </button>
+            <div class="grid g-70-30">
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/582/536/354.jpg?hmac=yl_995o4eDi7GMlFYMZcpu_DHFYjuA0g83BuhpHyGiI"
+                  alt="grid-img-1"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/134/536/354.jpg?hmac=GqngKpJ4MNwWb4KIR11yok3yVmLUyrVIYAX2E37h4dA"
+                  alt="grid-img-1"
+                />
               </div>
             </div>
-
-            <button class="btn snackbar-test">Test Snackbar</button>
           </div>
 
           <div class="component-container__code-snippet">
             <script type="text/plain" class="line-numbers language-markup">
-              <!-- standard toast -->
+              <!-- grid 70-30 -->
 
-              <div class="snackbar shadow">
-                <p>Can't send photo. Retry in 5 seconds.</p>
-                <div class="buttons">
-                  <button>RETRY</button>
-                  <button class="btn icon medium white btn-snackbar-dismiss">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
+              <div class="grid g-70-30">
+                <!-- content -->
+              </div>
+            </script>
+          </div>
+        </div>
+        <div class="hr-line fad"></div>
+        <h3 class="subtitle">Grid 30-70</h3>
+        <p class="paragraph">
+          Add grid-30-70-layout class on wrapper div which is wrapping 2 divs.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <div class="grid g-30-70">
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/582/536/354.jpg?hmac=yl_995o4eDi7GMlFYMZcpu_DHFYjuA0g83BuhpHyGiI"
+                  alt="grid-img-1"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/134/536/354.jpg?hmac=GqngKpJ4MNwWb4KIR11yok3yVmLUyrVIYAX2E37h4dA"
+                  alt="grid-img-1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- grid 30-70 -->
+
+              <div class="grid g-70-30">
+                <!-- content -->
               </div>
             </script>
           </div>
@@ -186,8 +207,8 @@
                 <li><a href="../navigation/index.html">Navigation</a></li>
                 <li><a href="../modal/index.html">Modal</a></li>
                 <li><a href="../rating/index.html">Rating</a></li>
-                <li class="active"><a href="./index.html">Toast</a></li>
-                <li><a href="../grid/index.html">Grid</a></li>
+                <li><a href="../toast/index.html">Toast</a></li>
+                <li class="active"><a href="./index.html">Grid</a></li>
                 <li><a href="../slider/index.html">Slider</a></li>
               </ul>
             </li>

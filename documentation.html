@@ -6,17 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palasio Designs</title>
 
-    <link rel="stylesheet" href="./palasio-designs.css" />
+    <link rel="stylesheet" href="./prismjs/prism.css" />
+
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./documentation.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
-      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <script defer src="./app.js"></script>
   </head>
@@ -57,55 +51,54 @@
 
     <section class="documentation-section">
       <main class="documentation-section__main">
-       
-          <h1 class="title">Getting Started</h1>
-          <p class="paragraph">
-            Copy and paste the code in the head tag of your html document. So
-            that you can style your components by just adding class names to
-            your html elements.
-          </p>
-          <pre>
-            <code>
-<!-- Just paste link in head element -->
+        <h1 class="title">Getting Started</h1>
+        <p class="paragraph">
+          Copy and paste the code in the head tag of your html document. So that
+          you can style your components by just adding class names to your html
+          elements.
+        </p>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Just paste link in head element -->
 
-<link
-  rel="stylesheet"
-  href="https://hardcore-gates-ad5554.netlify.app/palasio-design.css"
-/>
-
-            </code>
-          </pre>
-        
+          <link
+            rel="stylesheet"
+            href="https://palasio-designs.netlify.app/style.css"
+          />
+        </script>
       </main>
-     
+
       <!-- sidebar -->
       <aside class="documentation-section__aside">
         <div class="table-of-contents">
           <ul class="main-list">
-            <li>Get started</li>
+            <li class="main-list__item">Get started</li>
             <li>
               <ul>
-                <li><a href="./documentation.html">Usage</a></li>
+                <li class="active"><a href="./documentation.html">Usage</a></li>
               </ul>
             </li>
-            <li>Components</li>
+            <li class="main-list__item">Components</li>
             <li>
               <ul>
+                <li><a href="./components/alert/index.html">Alert</a></li>
                 <li><a href="./components/avatar/index.html">Avatar</a></li>
-                <li><a href="./components/alert/index.html">Alerts</a></li>
                 <li><a href="./components/badge/index.html">Badge</a></li>
-                <li><a href="./components/button/index.html">Buttons</a></li>
+                <li><a href="./components/button/index.html">Button</a></li>
                 <li><a href="./components/card/index.html">Card</a></li>
                 <li><a href="./components/image/index.html">Image</a></li>
                 <li><a href="./components/input/index.html">Input</a></li>
-                <li><a href="">Text Utilities</a></li>
-                <li><a href="">Lists</a></li>
-                <li><a href="">Navigation</a></li>
-                <li><a href="">Modal</a></li>
-                <li><a href="">Rating</a></li>
-                <li><a href="">Toast/Notify/Snackbar</a></li>
-                <li><a href="">Grids</a></li>
-                <li><a href="">Slider</a></li>
+                <li>
+                  <a href="./components/typography/index.html">Typography</a>
+                </li>
+                <li><a href="./components/list/index.html">List</a></li>
+                <li>
+                  <a href="./components/navigation/index.html">Navigation</a>
+                </li>
+                <li><a href="./components/modal/index.html">Modal</a></li>
+                <li><a href="./components/rating/index.html">Rating</a></li>
+                <li><a href="./components/toast/index.html">Toast</a></li>
+                <li><a href="./components/grid/index.html">Grid</a></li>
+                <li><a href="./components/slider/index.html">Slider</a></li>
               </ul>
             </li>
           </ul>
@@ -115,36 +108,58 @@
 
     <!-- footer -->
 
-  <footer class="footer get-started-footer">
+    <footer class="footer get-started-footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
       <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
-              ><i  class="fab fa-github"></i
+            <a
+              href="https://github.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
-              ><i  class="fab fa-twitter"></i
+            <a
+              href="https://twitter.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-twitter"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
-              ><i  class="fab fa-linkedin-in"></i
+            <a
+              href="https://www.linkedin.com/in/rahulyadav139/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
-        </a>
       </div>
     </footer>
-    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
-    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <button
+      class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"
+    >
+      <div>
+        <div><i class="fas fa-angle-up"></i></div>
+        <div><i class="fas fa-angle-down"></i></div>
+      </div>
+    </button>
+    <button
+      class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+    <script src="./prismjs/prism.js"></script>
   </body>
 </html>

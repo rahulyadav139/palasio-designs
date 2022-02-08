@@ -7,7 +7,7 @@ btnTest.addEventListener('click', () => {
   toast.classList.remove('hidden');
   setTimeout(() => {
     toast.classList.add('hidden');
-  }, 2000);
+  }, 1000);
 });
 
 btnSnackbar.addEventListener('click', () => {
