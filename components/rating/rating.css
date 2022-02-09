@@ -5,6 +5,9 @@
   flex-direction: row-reverse;
   gap: 1rem;
 }
+.dark-theme .rating-container {
+  background: var(--background-bg-color);
+}
 .rating-container input {
   display: none;
 }

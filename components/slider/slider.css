@@ -19,6 +19,9 @@
   border: 0.125rem solid var(--primary-color-dark);
   margin-top: -0.75rem;
 }
+.dark-theme .styled-slider::-webkit-slider-thumb {
+  background: var(--black-color);
+}
 .styled-slider::-moz-range-thumb {
   background: var(--white-color);
   width: 1.5rem;
@@ -26,4 +29,8 @@
   border-radius: 50%;
   border: 0.125rem solid var(--primary-color-dark);
   margin-top: -0.75rem;
+}
+
+.dark-theme .styled-slider::-moz-range-thumb {
+  background: var(--black-color);
 }

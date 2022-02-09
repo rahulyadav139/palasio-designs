@@ -5,7 +5,7 @@
   font-size: inherit;
 }
 
-.input-field .rounded-corner {
+.input-field.rounded-corner {
   border-radius: 0.5rem;
 }
 

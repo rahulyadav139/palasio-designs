@@ -46,7 +46,7 @@
   border-radius: 0.5rem;
   z-index: 15;
 }
-.buttons button {
+.snackbar .buttons button {
   margin-left: 2rem;
   background-color: transparent;
   outline: none;
@@ -56,6 +56,6 @@
   font-size: 1rem;
   vertical-align: middle;
 }
-.buttons button:first-child {
+.snackbar .buttons button:first-child {
   color: var(--white-color);
 }
