@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
 
-    <script defer src="./toast.js"></script>
     <script defer src="../../app.js"></script>
   </head>
   <body>
@@ -51,77 +50,12 @@
 
     <section class="documentation-section">
       <main class="documentation-section__main">
-        <h1 class="title">Toast</h1>
+        <h1 class="title">Slider</h1>
         <p class="paragraph">
-          Push notifications to your visitors with a toast, a lightweight and
-          easily customizable alert message.
+          Sliders are used to decide range for something like sound in videos,
+          price in shopping sites, etc.
         </p>
-        <h3 class="subtitle">Toast Based on the Situation</h3>
-        <p class="paragraph">
-          This library provides 3 different types of toasts. Add class
-          <span class="css-class">success, danger, loading</span> to get desired
-          one for your project.
-        </p>
-        <div class="component-container">
-          <div class="component-container__actions">
-            <button class="active component-container__actions__btn-live-demo">
-              Live Demo</button
-            ><button class="component-container__actions__btn-code-snippet">
-              Code Snippet
-            </button>
-          </div>
 
-          <div class="component-container__live-demo">
-            <div>
-              <div class="toast success show-mode">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Saved
-              </div>
-              <div class="toast danger show-mode">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Not Saved! Try again later.
-              </div>
-              <div class="toast loading show-mode">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Saving to server...
-              </div>
-
-              <div id="toast" class="toast success hidden">
-                <span class="icon small white"
-                  ><i class="fas fa-bell"></i
-                ></span>
-                Saved
-              </div>
-
-              <div class="flex center">
-                <button class="btn toast-test">Test Toast</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="component-container__code-snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-              <!-- toast based on the situation -->
-              <div class="toast danger">
-                <span class="icon small white"><i class="fas fa-bell"></i></span>
-                Not Saved! Try again later.
-              </div>
-            </script>
-          </div>
-        </div>
-        <div class="hr-line fad"></div>
-
-        <h3 class="subtitle">Toast with Dismiss Button</h3>
-        <p class="paragraph">
-          This toast has dismiss button. It doesn't disappear automatically,
-          user needs to dismiss it. Copy HTML to get this.
-        </p>
         <div class="component-container">
           <div class="component-container__actions">
             <button class="active component-container__actions__btn-live-demo">
@@ -131,32 +65,13 @@
             </button>
           </div>
           <div class="component-container__live-demo">
-            <div class="snackbar shadow hidden">
-              <p>Can't send photo. Retry in 5 seconds.</p>
-              <div class="buttons">
-                <button>RETRY</button>
-                <button class="btn icon medium white btn-snackbar-dismiss">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-
-            <button class="btn snackbar-test">Test Snackbar</button>
+            <input class="styled-slider" type="range" />
           </div>
 
           <div class="component-container__code-snippet">
             <script type="text/plain" class="line-numbers language-markup">
-              <!-- standard toast -->
-
-              <div class="snackbar shadow">
-                <p>Can't send photo. Retry in 5 seconds.</p>
-                <div class="buttons">
-                  <button>RETRY</button>
-                  <button class="btn icon medium white btn-snackbar-dismiss">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
+              <!-- styled slider -->
+              <input class="styled-slider" type="range" />
             </script>
           </div>
         </div>
@@ -186,9 +101,9 @@
                 <li><a href="../navigation/index.html">Navigation</a></li>
                 <li><a href="../modal/index.html">Modal</a></li>
                 <li><a href="../rating/index.html">Rating</a></li>
-                <li class="active"><a href="./index.html">Toast</a></li>
+                <li><a href="../toast/index.html">Toast</a></li>
                 <li><a href="../grid/index.html">Grid</a></li>
-                <li><a href="../slider/index.html">Slider</a></li>
+                <li class="active"><a href="./index.html">Slider</a></li>
               </ul>
             </li>
           </ul>

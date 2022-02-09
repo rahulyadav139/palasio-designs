@@ -6,21 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palasio Designs</title>
 
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
-      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="../../prismjs/prism.css" />
 
-    <link rel="stylesheet" href="../../palasio-designs.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
 
     <script defer src="./rating.js"></script>
     <script defer src="../../app.js"></script>
-    
   </head>
   <body>
     <!-- header -->
@@ -58,59 +51,55 @@
 
     <section class="documentation-section">
       <main class="documentation-section__main">
-     
-          <h1 class="title">Rating</h1>
-          <p class="paragraph">
-            
-          </p>
-          <h3 class="subtitle"></h3>
-          <p class="paragraph">
-            
-          </p>
-          <div class="component-container">
-            <div class="component-container__actions">
-              <button
-                class="active component-container__actions__btn-live-demo"
-              >
-                Live Demo</button
-              ><button class="component-container__actions__btn-code-snippet">
-                Code Snippet
-              </button>
-            </div>
-            <div class="component-container__live-demo">
-              <div>
+        <h1 class="title">Rating</h1>
+        <p class="paragraph">
+          Rating component can be used to allow the users to share their opinion
+          about the product, documentation page, photo and more.
+        </p>
+
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <div>
               <div class="rating-container">
-           <input type="radio" name="rate" id="rate-5"/>
-           <label for="rate-5"><i class="fas fa-star"></i></label>
-           <input type="radio" name="rate" id="rate-4"/>
-           <label for="rate-4"><i class="fas fa-star"></i></label>
-           <input type="radio" name="rate" id="rate-3"/>
-           <label for="rate-3"><i class="fas fa-star"></i></label>
-           <input type="radio" name="rate" id="rate-2"/>
-           <label for="rate-2"><i class="fas fa-star"></i></label>
-           <input type="radio" name="rate" id="rate-1"/>
-           <label for="rate-1"><i class="fas fa-star"></i></label>
-            </div>
-            <button class="btn">Submit</button>
-            </div>
-            </div>
-
-            <div class="component-container__code-snippet">
-             <pre>
-               <code>
-<!-- standard input field with focus effect -->
-
-<input class="input-field" type="text" />
-<textarea class="input-field" type="text"></textarea>
- 
-               </code>
-             </pre>
+                <input type="radio" name="rate" id="rate-5" />
+                <label for="rate-5"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-4" />
+                <label for="rate-4"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-3" />
+                <label for="rate-3"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-2" />
+                <label for="rate-2"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-1" />
+                <label for="rate-1"><i class="fas fa-star"></i></label>
+              </div>
             </div>
           </div>
-          <div class="hr-line fad"></div>
 
-         
-       
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- rating -->
+              <div class="rating-container">
+                <input type="radio" name="rate" id="rate-5" />
+                <label for="rate-5"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-4" />
+                <label for="rate-4"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-3" />
+                <label for="rate-3"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-2" />
+                <label for="rate-2"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-1" />
+                <label for="rate-1"><i class="fas fa-star"></i></label>
+              </div>
+            </script>
+          </div>
+        </div>
       </main>
       <!-- sidebar -->
       <aside class="documentation-section__aside">
@@ -125,21 +114,21 @@
             <li>Components</li>
             <li>
               <ul>
-                <li><a href="../avatar/index.html">Avatar</a></li>
                 <li><a href="../alert/index.html">Alert</a></li>
+                <li><a href="../avatar/index.html">Avatar</a></li>
                 <li><a href="../badge/index.html">Badge</a></li>
                 <li><a href="../button/index.html">Button</a></li>
                 <li><a href="../card/index.html">Card</a></li>
                 <li><a href="../image/index.html">Image</a></li>
-                <li><a href="./index.html">Input</a></li>
-                <li><a href="">Text Utilities</a></li>
-                <li><a href="">Lists</a></li>
-                <li><a href="">Navigation</a></li>
-                <li><a href="">Modal</a></li>
-                <li><a href="">Rating</a></li>
-                <li><a href="">Toast/Notify/Snackbar</a></li>
-                <li><a href="">Grids</a></li>
-                <li><a href="">Slider</a></li>
+                <li><a href="../input/index.html">Input</a></li>
+                <li><a href="../typography/index.html">Typography</a></li>
+                <li><a href="../list/index.html">List</a></li>
+                <li><a href="../navigation/index.html">Navigation</a></li>
+                <li><a href="../modal/index.html">Modal</a></li>
+                <li class="active"><a href="./index.html">Rating</a></li>
+                <li><a href="../toast/index.html">Toast</a></li>
+                <li><a href="../grid/index.html">Grid</a></li>
+                <li><a href="../slider/index.html">Slider</a></li>
               </ul>
             </li>
           </ul>
@@ -149,36 +138,58 @@
 
     <!-- footer -->
 
-   <footer class="footer">
+    <footer class="footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
       <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <a href="https://github.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
-              ><i  class="fab fa-github"></i
+            <a
+              href="https://github.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="https://twitter.com/rahulyadav139" target="_blank" rel="noopener noreferrer" class="icon medium white"
-              ><i  class="fab fa-twitter"></i
+            <a
+              href="https://twitter.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-twitter"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/rahulyadav139/" target="_blank" rel="noopener noreferrer" class="icon medium white"
-              ><i  class="fab fa-linkedin-in"></i
+            <a
+              href="https://www.linkedin.com/in/rahulyadav139/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
         </ul>
       </div>
       <div class="promotion">
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
-        </a>
       </div>
     </footer>
-    <button class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"><div><div><i class="fas fa-angle-up"></i></div><div><i class="fas fa-angle-down"></i></div></div></button>
-    <button class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"><i class="fas fa-times"></i></button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <button
+      class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"
+    >
+      <div>
+        <div><i class="fas fa-angle-up"></i></div>
+        <div><i class="fas fa-angle-down"></i></div>
+      </div>
+    </button>
+    <button
+      class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+    <script src="../../prismjs/prism.js"></script>
   </body>
 </html>

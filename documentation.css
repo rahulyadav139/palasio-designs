@@ -38,6 +38,7 @@
 }
 
 .documentation-section__main {
+  min-height: 100vh;
   margin: 1.5rem auto;
 }
 .documentation-section__main .paragraph {
@@ -59,6 +60,19 @@
   color: var(--grey-color);
   text-transform: uppercase;
   font-weight: bold;
+}
+.documentation-section__aside li {
+  border-left: 3px solid transparent;
+}
+.documentation-section__aside .main-list__item::first-letter {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.documentation-section__aside li.active {
+  border-color: var(--primary-color);
+}
+.documentation-section__aside li.active a {
+  color: var(--std-font-color);
 }
 .documentation-section__aside li a:hover,
 .documentation-section__aside li a:active {
@@ -114,9 +128,7 @@
   color: var(--white-color);
 }
 
-/* code snippet height */
-
-pre code {
+.code-toolbar {
   max-height: 22rem;
   overflow-y: auto;
 }

@@ -1,4 +1,4 @@
-@import url('./components/main-style.css');
+@import url('./components/main.css');
 @import url('./components/theme.css');
 @import url('./components/util.css');
 @import url('./components/alert/alert.css');
@@ -14,3 +14,5 @@
 @import url('./components/modal/modal.css');
 @import url('./components/toast/toast.css');
 @import url('./components/rating/rating.css');
+@import url('./components/slider/slider.css');
+@import url('./components/grid/grid.css');
