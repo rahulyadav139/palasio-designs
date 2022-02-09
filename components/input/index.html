@@ -59,7 +59,9 @@
         <p class="paragraph">
           The input shows response when it is in focus state. You can achieve
           that aby adding <span class="css-class">input-field</span> class to
-          input element. This will work for text area tag too.
+          input element. This will work for text area tag too. Add
+          <span class="css-class">rounded-corner</span> class to get rounded
+          corner input field.
         </p>
         <div class="component-container">
           <div class="component-container__actions">
@@ -70,6 +72,7 @@
             </button>
           </div>
           <div class="component-container__live-demo">
+            <input class="input-field rounded-corner" type="text" />
             <input class="input-field" type="text" />
             <textarea class="input-field" type="text"></textarea>
           </div>
@@ -98,6 +101,7 @@
             </button>
           </div>
           <div class="component-container__live-demo">
+            <input class="input-field rounded-corner error" type="text" />
             <input class="input-field error" type="text" />
             <textarea class="input-field error" type="text"></textarea>
           </div>
@@ -125,6 +129,13 @@
             </button>
           </div>
           <div class="component-container__live-demo">
+            <div class="input-field-icon rounded-corner">
+              <label
+                ><span class="icon small"><i class="bi bi-search"></i></span
+                ><input placeholder="Search" type="text"
+              /></label>
+            </div>
+
             <div class="input-field-icon">
               <label
                 ><span class="icon small"><i class="bi bi-search"></i></span
@@ -150,13 +161,13 @@
       <aside class="documentation-section__aside">
         <div class="table-of-contents">
           <ul class="main-list">
-            <li>Get started</li>
+            <li class="main-list__item">Get started</li>
             <li>
               <ul>
                 <li><a href="../../documentation.html">Usage</a></li>
               </ul>
             </li>
-            <li>Components</li>
+            <li class="main-list__item">Components</li>
             <li>
               <ul>
                 <li><a href="../alert/index.html">Alert</a></li>
