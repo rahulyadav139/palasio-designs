@@ -5,7 +5,7 @@
   width: 100%;
   padding: 0.5rem 1rem;
 }
-.nav-bar ul {
+.nav-bar .list-items {
   list-style: none;
   display: flex;
   align-items: center;

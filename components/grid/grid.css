@@ -1,12 +1,19 @@
 .grid {
   display: grid;
 }
-.grid.g-50-50 {
-  grid-template-columns: 1fr 1fr;
+.grid.g-2-items {
+  grid-template-columns: repeat(2, 1fr);
 }
+.grid.g-3-items {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grid.g-70-30 {
   grid-template-columns: 7fr 3fr;
 }
 .grid.g-30-70 {
   grid-template-columns: 3fr 7fr;
+}
+.grid.sample {
+  gap: 0.5rem;
 }

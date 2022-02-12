@@ -35,7 +35,10 @@
 .input-field-icon.rounded-corner {
   border-radius: 0.5rem;
 }
-
+.input-field-icon label {
+  width: 100%;
+  display: inline-flex;
+}
 .input-field-icon label span {
   color: var(--input-border-color);
 }
@@ -45,6 +48,8 @@
   outline: none;
   padding: 0.2rem 0.5rem;
   font-size: inherit;
+  flex-grow: 1;
+  width: 100%;
 }
 .input-field-icon input {
   background: transparent;
