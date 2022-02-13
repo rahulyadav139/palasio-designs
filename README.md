@@ -26,7 +26,7 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 
 
 
-### Posh UI contains the following components
+### Palasio Designs Component Library contains the following components
 
 - [Alert](#alert)
 - [Avatar](#avatar)
