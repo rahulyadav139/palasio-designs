@@ -4,161 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palasio Design</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-    />
-    <link rel="stylesheet" href="./palasio-design.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico" />
+    <title>Palasio Designs</title>
+
+    <link rel="stylesheet" href="./prismjs/prism.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./documentation.css" />
 
     <script defer src="./app.js"></script>
   </head>
   <body>
+    <!-- header -->
+
     <header class="card-with-shadow header-desktop">
+      <div class="brand">
+        <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+        <span class="brand__text">PALASIO </span>
+      </div>
       <nav>
         <ul>
-          <li>
-            <div class="brand-logo">
-              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-              ><i class="fas fa-angle-right"></i>
-            </div>
-          </li>
           <li><a href="/">Home</a></li>
           <li class="active-page">
             <a href="./documentation.html">Documentation</a>
           </li>
+          <li>
+            <div class="theme-toggle">
+              <input
+                type="checkbox"
+                class="theme-toggle__checkbox"
+                id="theme-toggle"
+              />
+              <label class="theme-toggle__label" for="theme-toggle">
+                <span> <i class="fas fa-moon"></i></span>
+                <span> <i class="fas fa-sun"></i></span>
+                <span class="ball"></span>
+              </label>
+            </div>
+          </li>
         </ul>
       </nav>
-
-      <div class="theme-toggle">
-        <input
-          type="checkbox"
-          class="theme-toggle__checkbox"
-          id="theme-toggle"
-        />
-        <label class="theme-toggle__label" for="theme-toggle">
-          <span> <i class="fas fa-moon"></i></span>
-          <span> <i class="fas fa-sun"></i></span>
-          <span class="ball"></span>
-        </label>
-      </div>
     </header>
+
+    <!-- main section -->
 
     <section class="documentation-section">
       <main class="documentation-section__main">
-        <section id="overview">
-          <h1>Overview</h1>
-          <p>
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before the final copy is available.
-          </p>
-        </section>
-        <div class="hr-line"></div>
-        <section id="getting-started">
-          <h1>Getting Started</h1>
-          <p>
-            Copy and paste the code in the head tag of your html document. So
-            that you can style your components by just adding class names to
-            your html elements.
-          </p>
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2841%2C44%2C53%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fpalasio-designs.netlify.app%252FComponents%252Fu-and-i.css%2522%253E%250A"
-            style="
-              width: 100%;
-              height: 125px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </section>
-        <div class="hr-line"></div>
-        <section id="components">
-          <h1>Components</h1>
-          <p>
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before the final copy is available.
-          </p>
-          <!-- avatar component -->
-          <section id="avatar">
-            <h2>Avatar</h2>
-            <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available.
-            </p>
-            <div class="card-with-shadow container-component container-avatar">
-              <div class="code-container-avatar__actions">
-                <button class="active container-avatar__btn-live-demo">
-                  Live Demo</button
-                ><button class="container-avatar__btn-code-snippet">
-                  Code Snippet
-                </button>
-              </div>
-              <div class="container__live-demo container-avatar__live-demo">
-                <div class="avatar avatar-large">
-                  <img src="../Assets/testimonial.jpg" />
-                </div>
-                <div class="avatar avatar-medium">
-                  <img src="../Assets/testimonial.jpg" />
-                </div>
-                <div class="avatar avatar-small">
-                  <img src="../Assets/testimonial.jpg" />
-                </div>
-              </div>
-              <div
-                class="container__code-snippet container-avatar__code-snippet"
-              >
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2841%2C44%2C53%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=146%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252Ftestimonial.jpg%2522%2520%252F%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252Ftestimonial.jpg%2522%2520%252F%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252Ftestimonial.jpg%2522%2520%252F%253E%250A%2520%253C%252Fdiv%253E"
-                  style="
-                    width: 100%;
-                    height: 370px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
-          </section>
-          <div class="hr-line"></div>
-        </section>
+        <h1 class="title">Getting Started</h1>
+        <p class="paragraph">
+          Copy and paste the code in the head tag of your html document. So that
+          you can style your components by just adding class names to your html
+          elements.
+        </p>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Just paste link in head element -->
+
+          <link
+            rel="stylesheet"
+            href="https://palasio-designs.netlify.app/style.css"
+          />
+        </script>
+        <p class="paragraph">
+          You can import styles directly in the CSS stylesheet. Paste below code
+          in your CSS file.
+        </p>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Just paste link in CSS file -->
+
+          @import url('https://palasio-designs.netlify.app/style.css');
+        </script>
       </main>
+
+      <!-- sidebar -->
       <aside class="documentation-section__aside">
         <div class="table-of-contents">
           <ul class="main-list">
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#getting-started">Getting started</a></li>
+            <li class="main-list__item">Get started</li>
             <li>
-              <a href="#components">Components</a>
               <ul>
-                <li><a href="#avatar">Avatar</a></li>
-                <li><a href="#alerts">Alerts</a></li>
-                <li><a href="#badge">Badge</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#card">Card</a></li>
-                <li><a href="#image">Image</a></li>
-                <li><a href="#input">Input</a></li>
-                <li><a href="#text-utilities">Text Utilities</a></li>
-                <li><a href="#lists">Lists</a></li>
-                <li><a href="#navigation">Navigation</a></li>
-                <li><a href="#model">Modal</a></li>
-                <li><a href="#rating">Rating</a></li>
-                <li><a href="#toast">Toast/Notify/Snackbar</a></li>
-                <li><a href="#grids">Grids</a></li>
-                <li><a href="#slider">Slider</a></li>
+                <li class="active"><a href="./documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li class="main-list__item">Components</li>
+            <li>
+              <ul>
+                <li><a href="./components/alert/index.html">Alert</a></li>
+                <li><a href="./components/avatar/index.html">Avatar</a></li>
+                <li><a href="./components/badge/index.html">Badge</a></li>
+                <li><a href="./components/button/index.html">Button</a></li>
+                <li><a href="./components/card/index.html">Card</a></li>
+                <li><a href="./components/image/index.html">Image</a></li>
+                <li><a href="./components/input/index.html">Input</a></li>
+                <li>
+                  <a href="./components/typography/index.html">Typography</a>
+                </li>
+                <li><a href="./components/list/index.html">List</a></li>
+                <li>
+                  <a href="./components/navigation/index.html">Navigation</a>
+                </li>
+                <li><a href="./components/modal/index.html">Modal</a></li>
+                <li><a href="./components/rating/index.html">Rating</a></li>
+                <li><a href="./components/toast/index.html">Toast</a></li>
+                <li><a href="./components/grid/index.html">Grid</a></li>
+                <li><a href="./components/slider/index.html">Slider</a></li>
               </ul>
             </li>
           </ul>
@@ -166,26 +115,40 @@
       </aside>
     </section>
 
-    <footer class="footer">
+    <!-- footer -->
+
+    <footer class="footer get-started-footer">
       <h1 class="slogan">Make an impact and create something awesome.</h1>
-      <div class="black-bg-theme hr-line"></div>
+      <div class="hr-line fad primary-invert"></div>
 
       <div class="social-links">
         <ul>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-github"></i
-            ></span>
+            <a
+              href="https://github.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-github"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-twitter"></i
-            ></span>
+            <a
+              href="https://twitter.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <span class="icon icon-small"
-              ><i id="icon" class="fab fa-linkedin-in"></i
-            ></span>
+            <a
+              href="https://www.linkedin.com/in/rahulyadav139/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -193,5 +156,19 @@
         Made with <i class="fas fa-heart"></i> by Rahul Yadav
       </div>
     </footer>
+    <button
+      class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"
+    >
+      <div>
+        <div><i class="fas fa-angle-up"></i></div>
+        <div><i class="fas fa-angle-down"></i></div>
+      </div>
+    </button>
+    <button
+      class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+    <script src="./prismjs/prism.js"></script>
   </body>
 </html>

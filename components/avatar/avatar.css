@@ -1,0 +1,44 @@
+.avatar {
+  background: var(--primary-color-dark);
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  border-radius: 50%;
+}
+
+.avatar img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1/1;
+}
+
+.avatar.small img {
+  border: 2px solid var(--primary-color-dark);
+}
+.avatar.medium img {
+  border: 3px solid var(--primary-color-dark);
+}
+.avatar.large img {
+  border: 4px solid var(--primary-color-dark);
+}
+.avatar.small {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.avatar.medium {
+  width: 6.25rem;
+  height: 6.25rem;
+  font-size: 2.5rem;
+}
+.avatar.large {
+  width: 9.5rem;
+  height: 9.5rem;
+  font-size: 4rem;
+}

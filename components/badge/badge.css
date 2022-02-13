@@ -1,0 +1,127 @@
+.badge-container {
+  position: relative;
+}
+
+/* status badge */
+
+.badge-container .badge-status {
+  position: absolute;
+  display: inline-block;
+  border: 0.125rem solid var(--white-color);
+}
+.badge-status.top {
+  top: 0;
+}
+.badge-status.right {
+  right: 0;
+}
+.badge-status.left {
+  left: 0;
+}
+.badge-status.bottom {
+  bottom: 0;
+}
+.small ~ .badge-status {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin: 0.0625rem;
+}
+
+.medium ~ .badge-status {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  margin: 0.375rem;
+}
+
+.large ~ .badge-status {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin: 0.625rem;
+}
+.badge-status.online {
+  background: var(--green-color);
+}
+.badge-status.offline {
+  background: var(--red-color);
+}
+.badge-status.dnd {
+  background: var(--yellow-color);
+}
+
+.badge-container .badge-number {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color-dark);
+  border: 0.125rem solid var(--white-color);
+  color: var(--white-color);
+}
+
+.icon.small ~ .badge-number {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  font-size: 0.4rem;
+  top: -0.6rem;
+  right: -0.6rem;
+}
+
+.icon.medium ~ .badge-number {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  top: -0.75rem;
+  right: -1rem;
+}
+
+.icon.large ~ .badge-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  top: -1rem;
+  right: -1rem;
+}
+
+.icon.circle.small ~ .badge-number,
+.icon.square.small ~ .badge-number,
+.icon.circle.large ~ .badge-number,
+.icon.square.large ~ .badge-number,
+.icon.circle.medium ~ .badge-number,
+.icon.square.medium ~ .badge-number {
+  top: -0.3rem;
+  right: -0.3rem;
+}
+
+/* text badge */
+.text-badge {
+  color: var(--white-color);
+  background: var(--primary-color);
+  font-weight: bold;
+}
+
+.text-badge.large {
+  font-size: 1rem;
+  padding: 0.35rem;
+  vertical-align: middle;
+  border-radius: 0.35rem;
+}
+
+.text-badge.medium {
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+}
+
+.text-badge.small {
+  font-size: 0.6rem;
+  padding: 0.25rem;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+}

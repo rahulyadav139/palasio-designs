@@ -1,0 +1,74 @@
+.input-field {
+  border: 1.5px solid var(--grey-color);
+  padding: 0.5rem;
+  outline: none;
+  font-size: inherit;
+}
+
+.input-field.rounded-corner {
+  border-radius: 0.5rem;
+}
+
+.dark-theme .input-field {
+  border-color: var(--grey-color);
+  background: transparent;
+}
+
+.responsive:focus {
+  border-color: var(--input-border-color);
+  background: var(--input-bg-color);
+}
+
+.responsive.error {
+  border-color: var(--input-error-border-color);
+}
+
+.responsive.error:focus {
+  border-color: var(--input-error-border-color);
+  background: var(--input-error-bg-color);
+}
+
+/* input field with icon */
+
+.input-field-icon {
+  border: 1.5px solid var(--grey-color);
+  padding: 0.2rem 0.4rem;
+}
+.input-field-icon.rounded-corner {
+  border-radius: 0.5rem;
+}
+.input-field-icon label {
+  width: 100%;
+  display: inline-flex;
+}
+.input-field-icon label span {
+  color: var(--grey-color);
+}
+
+.input-field-icon input {
+  border: none;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  font-size: inherit;
+  flex-grow: 1;
+  width: 100%;
+}
+.input-field-icon input {
+  background: transparent;
+}
+.responsive:focus-within {
+  background: var(--input-bg-color);
+  border-color: var(--input-border-color);
+}
+.responsive:focus-within label span {
+  color: var(--input-border-color);
+}
+
+.responsive.error:focus-within {
+  background: var(--input-error-bg-color);
+  border-color: var(--input-error-border-color);
+}
+
+.responsive.error:focus-within label span {
+  color: var(--input-error-border-color);
+}

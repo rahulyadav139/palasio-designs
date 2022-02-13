@@ -1,0 +1,87 @@
+.flex {
+  display: flex;
+}
+
+.flex.col {
+  flex-direction: column;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.start {
+  justify-content: flex-start;
+}
+.flex.end {
+  justify-content: flex-end;
+}
+.flex.space-between {
+  justify-content: space-between;
+}
+.flex.space-around {
+  justify-content: space-around;
+}
+.flex.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.gap {
+  gap: 1rem;
+}
+
+.hr-line {
+  height: 2px;
+  width: 100%;
+}
+
+.hr-line.fad {
+  background: linear-gradient(
+    90deg,
+    var(--white-color) 0%,
+    var(--black-color) 50%,
+    var(--white-color) 100%
+  );
+}
+
+.dark-theme .hr-line.fad {
+  background: linear-gradient(
+    90deg,
+    var(--dark-theme-bg-color) 0%,
+    var(--white-color) 50%,
+    var(--dark-theme-bg-color) 100%
+  );
+}
+
+.hr-line.solid {
+  background: var(--dark-theme-bg-color);
+}
+.hr-line.solid.grey {
+  background: var(--grey-color);
+}
+.dark-theme .hr-line.solid {
+  background: var(--white-color);
+}
+
+.hr-line.fad.primary-invert {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color-dark) 0%,
+    var(--white-color) 50%,
+    var(--primary-color-dark) 100%
+  );
+}
+
+/* highlight class */
+
+.css-class {
+  background-color: var(--grey-color-light);
+  font-style: italic;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+.dark-theme .css-class {
+  background-color: var(--black-color);
+}

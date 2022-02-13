@@ -1,0 +1,66 @@
+.notification {
+  display: flex;
+  width: 100%;
+  max-width: 37.5rem;
+  justify-content: flex-start;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.notification .notification-title {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.notification .notification-details {
+  font-size: 0.8rem;
+}
+.notification .notification-time {
+  margin-left: auto;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+.notification i {
+  color: var(--primary-color);
+}
+
+/* temp */
+.styled-list {
+  list-style: none;
+  position: relative;
+}
+
+.styled-list li {
+  background: var(--primary-color-light);
+  padding: 0.2rem 1rem;
+  margin: 0.5rem auto;
+}
+.dark-theme .styled-list li {
+  background: var(--primary-color-dark);
+}
+.styled-list li:before {
+  position: absolute;
+  left: -1.5rem;
+  background: linear-gradient(45deg, var(--yellow-bg-color));
+  padding: 0.2rem 0.5rem;
+  margin-top: -0.2rem;
+}
+
+/* ordered list */
+
+.styled-list.ordered {
+  counter-reset: li;
+}
+.styled-list.ordered li:before {
+  content: counter(li);
+  counter-increment: li;
+}
+/* unordered list */
+
+.styled-list.unordered li:before {
+  content: '➥';
+  padding: 0.16rem 0.5rem;
+}

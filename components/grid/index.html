@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../../Assets/favicon.ico" />
+    <title>Palasio Designs</title>
+
+    <link rel="stylesheet" href="../../prismjs/prism.css" />
+
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../shared.css" />
+    <link rel="stylesheet" href="../../documentation.css" />
+
+    <script defer src="../../app.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="card-with-shadow header-desktop">
+      <div class="brand">
+        <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+        <span class="brand__text">PALASIO </span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="active-page">
+            <a href="../../documentation.html">Documentation</a>
+          </li>
+          <li>
+            <div class="theme-toggle">
+              <input
+                type="checkbox"
+                class="theme-toggle__checkbox"
+                id="theme-toggle"
+              />
+              <label class="theme-toggle__label" for="theme-toggle">
+                <span> <i class="fas fa-moon"></i></span>
+                <span> <i class="fas fa-sun"></i></span>
+                <span class="ball"></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main section -->
+
+    <section class="documentation-section">
+      <main class="documentation-section__main">
+        <h1 class="title">Grid</h1>
+        <p class="paragraph">
+          Use grid when you want sections in view. Check below some examples of
+          side by side cards.
+        </p>
+        <h3 class="subtitle">Grid with 2 Items</h3>
+        <p class="paragraph">
+          Add <span class="css-class">g-2-items</span> to the wrapper div to get
+          grid with 2 items.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <div class="grid g-2-items sample">
+              <!-- card 1 -->
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <button class="btn icon medium primary">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+              </div>
+              <!-- card 2 -->
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <button class="btn icon medium primary">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- grid with 2 items -->
+
+              <div class="grid g-2-items">
+                <!-- content -->
+              </div>
+            </script>
+          </div>
+        </div>
+        <div class="hr-line fad"></div>
+
+        <h3 class="subtitle">Grid with 3 Items</h3>
+        <p class="paragraph">
+          Add <span class="css-class">g-3-items</span> to the wrapper div to get
+          grid with 3 items.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <div class="grid g-3-items sample">
+              <!-- card 1 -->
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <button class="btn icon medium primary">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+              </div>
+              <!-- card 2 -->
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <button class="btn icon medium primary">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+              </div>
+              <!-- card 3 -->
+              <div class="card shadow ecom">
+                <div class="image">
+                  <img
+                    src="https://i.picsum.photos/id/1068/536/354.jpg?hmac=0EcdEtmebl00JWjYSxW7Kc0D5RpjOAgTpfMwSxErPOk"
+                    alt="sample"
+                  />
+                </div>
+
+                <div class="flex space-between">
+                  <h1 class="brand">Impos Decor</h1>
+                  <button class="btn icon medium primary">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <h2 class="title">Vintage artifacts vase</h2>
+                <div class="price">
+                  <div class="price__old">$100</div>
+                  <div class="price__new">$80</div>
+                </div>
+
+                <button class="btn primary"><strong>Add</strong></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- grid with 3 items -->
+
+              <div class="grid g-3-items">
+                <!-- content -->
+              </div>
+            </script>
+          </div>
+        </div>
+
+        <div class="hr-line fad"></div>
+
+        <h3 class="subtitle">Grid 70-30</h3>
+        <p class="paragraph">
+          Add <span class="css-class">g-70-30</span> to the wrapper div to get
+          grid with 70-30 layout.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <div class="grid g-70-30">
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/582/536/354.jpg?hmac=yl_995o4eDi7GMlFYMZcpu_DHFYjuA0g83BuhpHyGiI"
+                  alt="grid-img-1"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/134/536/354.jpg?hmac=GqngKpJ4MNwWb4KIR11yok3yVmLUyrVIYAX2E37h4dA"
+                  alt="grid-img-1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- grid 70-30 -->
+
+              <div class="grid g-70-30">
+                <!-- content -->
+              </div>
+            </script>
+          </div>
+        </div>
+        <div class="hr-line fad"></div>
+        <h3 class="subtitle">Grid 30-70</h3>
+        <p class="paragraph">
+          Add <span class="css-class">g-30-70</span> to the wrapper div to get
+          grid with 30-70 layout.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <div class="grid g-30-70">
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/582/536/354.jpg?hmac=yl_995o4eDi7GMlFYMZcpu_DHFYjuA0g83BuhpHyGiI"
+                  alt="grid-img-1"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-responsive"
+                  src="https://i.picsum.photos/id/134/536/354.jpg?hmac=GqngKpJ4MNwWb4KIR11yok3yVmLUyrVIYAX2E37h4dA"
+                  alt="grid-img-1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- grid 30-70 -->
+
+              <div class="grid g-70-30">
+                <!-- content -->
+              </div>
+            </script>
+          </div>
+        </div>
+      </main>
+      <!-- sidebar -->
+      <aside class="documentation-section__aside">
+        <div class="table-of-contents">
+          <ul class="main-list">
+            <li class="main-list__item">Get started</li>
+            <li>
+              <ul>
+                <li><a href="../../documentation.html">Usage</a></li>
+              </ul>
+            </li>
+            <li class="main-list__item">Components</li>
+            <li>
+              <ul>
+                <li><a href="../alert/index.html">Alert</a></li>
+                <li><a href="../avatar/index.html">Avatar</a></li>
+                <li><a href="../badge/index.html">Badge</a></li>
+                <li><a href="../button/index.html">Button</a></li>
+                <li><a href="../card/index.html">Card</a></li>
+                <li><a href="../image/index.html">Image</a></li>
+                <li><a href="../input/index.html">Input</a></li>
+                <li><a href="../typography/index.html">Typography</a></li>
+                <li><a href="../list/index.html">List</a></li>
+                <li><a href="../navigation/index.html">Navigation</a></li>
+                <li><a href="../modal/index.html">Modal</a></li>
+                <li><a href="../rating/index.html">Rating</a></li>
+                <li><a href="../toast/index.html">Toast</a></li>
+                <li class="active"><a href="./index.html">Grid</a></li>
+                <li><a href="../slider/index.html">Slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <h1 class="slogan">Make an impact and create something awesome.</h1>
+      <div class="hr-line fad primary-invert"></div>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/rahulyadav139"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rahulyadav139/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon medium white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="promotion">
+        Made with <i class="fas fa-heart"></i> by Rahul Yadav
+      </div>
+    </footer>
+    <button
+      class="menu-toggler menu-toggler-show btn icon large primary circle float bottom right"
+    >
+      <div>
+        <div><i class="fas fa-angle-up"></i></div>
+        <div><i class="fas fa-angle-down"></i></div>
+      </div>
+    </button>
+    <button
+      class="menu-toggler menu-toggler-hide btn icon large primary circle float bottom right"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+    <script src="../../prismjs/prism.js"></script>
+  </body>
+</html>

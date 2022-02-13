@@ -1,0 +1,61 @@
+.toast {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  margin: 1rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 15.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.toast.success {
+  background: linear-gradient(270deg, var(--green-bg-color));
+}
+.toast.danger {
+  background: linear-gradient(45deg, var(--red-bg-color));
+}
+.toast.loading {
+  background: linear-gradient(45deg, var(--blue-bg-color));
+}
+
+.show-mode {
+  position: static;
+  transform: translateX(0%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* snackbar */
+
+.snackbar {
+  width: 60%;
+  padding: 1rem;
+  background-color: var(--black-color);
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  z-index: 15;
+}
+.snackbar .buttons button {
+  margin-left: 2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.snackbar .buttons button:first-child {
+  color: var(--white-color);
+}
