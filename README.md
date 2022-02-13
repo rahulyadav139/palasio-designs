@@ -224,7 +224,7 @@ You will find the following types of _Typography_ on https://palasio-designs.net
 
 ---
 
-<!-- ![posh ui gif](assets/gifs/posh-ui.gif) -->
+![palasio designs gif](Assets/component-library-final.gif)
 
 ---
 
