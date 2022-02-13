@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../Assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../Assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../Assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../Assets/site.webmanifest" />
     <title>Palasio Designs</title>
 
     <link rel="stylesheet" href="../../prismjs/prism.css" />
@@ -17,34 +35,33 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header-desktop">
+    <header class="card-with-shadow header-desktop">
+      <div class="brand">
+        <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+        <span class="brand__text">PALASIO </span>
+      </div>
       <nav>
         <ul>
-          <li>
-            <div class="brand-logo">
-              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-              ><i class="fas fa-angle-right"></i>
-            </div>
-          </li>
           <li><a href="/">Home</a></li>
           <li class="active-page">
-            <a href="./documentation.html">Documentation</a>
+            <a href="../../documentation.html">Documentation</a>
+          </li>
+          <li>
+            <div class="theme-toggle">
+              <input
+                type="checkbox"
+                class="theme-toggle__checkbox"
+                id="theme-toggle"
+              />
+              <label class="theme-toggle__label" for="theme-toggle">
+                <span> <i class="fas fa-moon"></i></span>
+                <span> <i class="fas fa-sun"></i></span>
+                <span class="ball"></span>
+              </label>
+            </div>
           </li>
         </ul>
       </nav>
-
-      <div class="theme-toggle">
-        <input
-          type="checkbox"
-          class="theme-toggle__checkbox"
-          id="theme-toggle"
-        />
-        <label class="theme-toggle__label" for="theme-toggle">
-          <span> <i class="fas fa-moon"></i></span>
-          <span> <i class="fas fa-sun"></i></span>
-          <span class="ball"></span>
-        </label>
-      </div>
     </header>
 
     <!-- main section -->
@@ -73,9 +90,9 @@
           <div class="component-container__live-demo">
             <!-- navigation code -->
             <nav class="nav-bar shadow">
-              <div class="brand-logo">
-                <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-                ><i class="fas fa-angle-right"></i>
+              <div class="brand">
+                <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+                <span class="brand__text">PALASIO </span>
               </div>
 
               <div class="input-field-icon">
@@ -176,9 +193,9 @@
           </div>
           <div class="component-container__live-demo">
             <nav class="nav-bar shadow">
-              <div class="brand-logo">
-                <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-                ><i class="fas fa-angle-right"></i>
+              <div class="brand">
+                <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+                <span class="brand__text">PALASIO </span>
               </div>
 
               <div class="input-field-icon">

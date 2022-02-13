@@ -15,17 +15,10 @@
   align-items: center;
   gap: 1.5rem;
 }
-.main-section__right .brand div {
-  text-align: center;
-}
-.main-section__right .brand div:first-child {
+.main-section__right .brand__logo {
+  border: none;
   font-size: 2.5rem;
-  color: var(--primary-color-dark);
-}
-.main-section__right .brand div {
-  color: var(--primary-color-dark);
-  font-size: 1.5rem;
-  font-weight: bold;
+  padding: 0;
 }
 
 .img-responsive {

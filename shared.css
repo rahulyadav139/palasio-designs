@@ -17,10 +17,33 @@
   gap: 1rem;
   align-items: center;
 }
-.brand-logo {
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.brand__logo {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  color: #2b6777;
+  border-right: 2px solid #2b6777;
+}
+
+.brand__text {
+  letter-spacing: 0.5rem;
+  color: #2b6777;
+  font-weight: bold;
+
+  /* text-align: center; */
+  /* font-size: 10px; */
+  font-family: 'Quintessential', cursive;
+}
+/* .brand-logo {
   font-size: 1.5rem;
   color: var(--primary-color-dark);
-}
+} */
 
 .footer {
   background: var(--primary-color-dark);
