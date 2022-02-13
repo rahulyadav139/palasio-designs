@@ -14,22 +14,24 @@
   background: transparent;
 }
 
-.input-field:focus {
+.responsive:focus {
   border-color: var(--input-border-color);
   background: var(--input-bg-color);
 }
 
-.input-field.error {
+.responsive.error {
   border-color: var(--input-error-border-color);
 }
 
-.input-field.error:focus {
+.responsive.error:focus {
   border-color: var(--input-error-border-color);
   background: var(--input-error-bg-color);
 }
 
+/* input field with icon */
+
 .input-field-icon {
-  border: 1.5px solid var(--input-border-color);
+  border: 1.5px solid var(--grey-color);
   padding: 0.2rem 0.4rem;
 }
 .input-field-icon.rounded-corner {
@@ -40,7 +42,7 @@
   display: inline-flex;
 }
 .input-field-icon label span {
-  color: var(--input-border-color);
+  color: var(--grey-color);
 }
 
 .input-field-icon input {
@@ -54,6 +56,19 @@
 .input-field-icon input {
   background: transparent;
 }
-.input-field-icon:focus-within {
+.responsive:focus-within {
   background: var(--input-bg-color);
+  border-color: var(--input-border-color);
+}
+.responsive:focus-within label span {
+  color: var(--input-border-color);
+}
+
+.responsive.error:focus-within {
+  background: var(--input-error-bg-color);
+  border-color: var(--input-error-border-color);
+}
+
+.responsive.error:focus-within label span {
+  color: var(--input-error-border-color);
 }

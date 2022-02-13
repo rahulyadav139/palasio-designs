@@ -55,11 +55,11 @@
           used to take information from the user, and then save the data to the
           server, accordingly.
         </p>
-        <h3 class="subtitle">Responsive Input Field</h3>
+        <h3 class="subtitle">Standard Input Field</h3>
         <p class="paragraph">
-          The input shows response when it is in focus state. You can achieve
-          that aby adding <span class="css-class">input-field</span> class to
-          input element. This will work for text area tag too. Add
+          This is standard input field. Just add
+          <span class="css-class">input-field</span> class to the input field.
+          This will work for text area tag too. Add
           <span class="css-class">rounded-corner</span> class to get rounded
           corner input field.
         </p>
@@ -73,24 +73,24 @@
           </div>
           <div class="component-container__live-demo">
             <input class="input-field rounded-corner" type="text" />
-            <input class="input-field" type="text" />
+            <input class="input-field responsive" type="text" />
             <textarea class="input-field" type="text"></textarea>
           </div>
 
           <div class="component-container__code-snippet">
             <script type="text/plain" class="line-numbers language-markup">
               <input class="input-field" type="text" />
-              <textarea class="input-field error" type="text"></textarea>
+              <textarea class="input-field" type="text"></textarea>
             </script>
           </div>
         </div>
         <div class="hr-line fad"></div>
 
-        <h3 class="subtitle">Input on Error</h3>
+        <h3 class="subtitle">Responsive Input Field</h3>
         <p class="paragraph">
-          If input field doesn't full fill validate condition, it shows error in
-          response. You can achieve that by adding
-          <span class="css-class">error</span> class to input field.
+          The input shows response when it is in focus state. You can achieve
+          that aby adding <span class="css-class">responsive</span> class to
+          input element. This will work for text area tag too.
         </p>
         <div class="component-container">
           <div class="component-container__actions">
@@ -101,15 +101,52 @@
             </button>
           </div>
           <div class="component-container__live-demo">
-            <input class="input-field rounded-corner error" type="text" />
-            <input class="input-field error" type="text" />
-            <textarea class="input-field error" type="text"></textarea>
+            <input class="input-field responsive rounded-corner" type="text" />
+            <input class="input-field responsive" type="text" />
+            <textarea class="input-field responsive" type="text"></textarea>
           </div>
 
           <div class="component-container__code-snippet">
             <script type="text/plain" class="line-numbers language-markup">
-              <input class="input-field error" type="text" />
-              <textarea class="input-field error" type="text"></textarea>
+              <input class="input-field responsive" type="text" />
+              <textarea class="input-field responsive" type="text"></textarea>
+            </script>
+          </div>
+        </div>
+
+        <div class="hr-line fad"></div>
+
+        <h3 class="subtitle">Input on Error</h3>
+        <p class="paragraph">
+          If input field doesn't full fill validate condition, it shows error in
+          response. You can achieve that by adding
+          <span class="css-class">error</span> class to input field along with
+          responsive class.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <input
+              class="input-field responsive error rounded-corner error"
+              type="text"
+            />
+            <input class="input-field responsive error" type="text" />
+            <textarea
+              class="input-field responsive error"
+              type="text"
+            ></textarea>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <input class="input-field responsive error" type="text" />
+              <textarea class="input-field responsive error" type="text"></textarea>
             </script>
           </div>
         </div>
@@ -118,7 +155,11 @@
         <p class="paragraph">
           Get input with icon as label by adding
           <span class="css-class">input-field-icon</span> to wrapper. You choose
-          any font awesome/bootstrap icon for icon label.
+          any font awesome/bootstrap icon for icon label. This input field works
+          same as standard input works. Just add
+          <span class="css-class">responsive</span> class for responsive and
+          <span class="css-class">error</span> class to get responsiveness on
+          error input.
         </p>
         <div class="component-container">
           <div class="component-container__actions">
@@ -136,7 +177,14 @@
               /></label>
             </div>
 
-            <div class="input-field-icon">
+            <div class="input-field-icon responsive">
+              <label
+                ><span class="icon small"><i class="bi bi-search"></i></span
+                ><input placeholder="Search" type="text"
+              /></label>
+            </div>
+
+            <div class="input-field-icon responsive error">
               <label
                 ><span class="icon small"><i class="bi bi-search"></i></span
                 ><input placeholder="Search" type="text"
@@ -146,7 +194,28 @@
 
           <div class="component-container__code-snippet">
             <script type="text/plain" class="line-numbers language-markup">
+              <!-- standard input with icon -->
               <div class="input-field-icon">
+                <label>
+                  <!-- icon container -->
+                  <span class="icon small"><i class="bi bi-search"></i></span>
+                  <input placeholder="Search" type="text"/>
+                </label>
+              </div>
+
+              <!-- responsive -->
+
+              <div class="input-field-icon responsive">
+                <label>
+                  <!-- icon container -->
+                  <span class="icon small"><i class="bi bi-search"></i></span>
+                  <input placeholder="Search" type="text"/>
+                </label>
+              </div>
+
+              <!-- responsive on error input-->
+
+              <div class="input-field-icon responsive error">
                 <label>
                   <!-- icon container -->
                   <span class="icon small"><i class="bi bi-search"></i></span>
