@@ -1,3 +1,9 @@
+/* shadow util class */
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* flex util classes */
 .flex {
   display: flex;
 }
@@ -32,9 +38,14 @@
   gap: 1rem;
 }
 
+/* horizontal line */
+
 .hr-line {
   height: 2px;
   width: 100%;
+}
+.hr-line.thin {
+  height: 1px;
 }
 
 .hr-line.fad {
