@@ -58,6 +58,7 @@ a {
   text-decoration: none;
   font-family: inherit;
   color: initial;
+  cursor: pointer;
 }
 .dark-theme a {
   color: var(--white-color);
