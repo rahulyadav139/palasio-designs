@@ -93,6 +93,9 @@
   margin: 1rem auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.dark-theme .component-container {
+  box-shadow: rgba(0, 0, 0, 1) 0px 7px 29px 0px;
+}
 .component-container__live-demo {
   display: flex;
   flex-direction: row;

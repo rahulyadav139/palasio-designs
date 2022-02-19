@@ -8,6 +8,9 @@
   padding: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.dark-theme .header-desktop {
+  box-shadow: rgba(0, 0, 0, 1) 0px 7px 29px 0px;
+}
 .header-desktop a:hover {
   color: var(--primary-color-dark);
 }
@@ -27,23 +30,16 @@
 .brand__logo {
   font-size: 1.5rem;
   padding-right: 1rem;
-  color: #2b6777;
-  border-right: 2px solid #2b6777;
+  color: var(--primary-color-dark);
+  border-right: 2px solid var(--primary-color-dark);
 }
 
 .brand__text {
   letter-spacing: 0.5rem;
-  color: #2b6777;
+  color: var(--primary-color-dark);
   font-weight: bold;
-
-  /* text-align: center; */
-  /* font-size: 10px; */
   font-family: 'Quintessential', cursive;
 }
-/* .brand-logo {
-  font-size: 1.5rem;
-  color: var(--primary-color-dark);
-} */
 
 .footer {
   background: var(--primary-color-dark);
@@ -63,7 +59,7 @@
   margin: auto;
 }
 .footer .promotion .fas {
-  color: red;
+  color: var(--red-color);
 }
 .theme-toggle {
   position: relative;
