@@ -1,4 +1,3 @@
-
 .card {
   padding: 1rem;
   position: relative;
@@ -68,9 +67,11 @@
 }
 .ecom .image img {
   object-fit: cover;
+  object-position: center;
   max-inline-size: 100%;
   block-size: auto;
   aspect-ratio: 1/1;
+  display: block;
 }
 
 .ecom .btn:not(.icon) {

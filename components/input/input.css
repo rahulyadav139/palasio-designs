@@ -13,10 +13,14 @@
   border-color: var(--grey-color);
   background: transparent;
 }
+.dark-theme .input-field {
+  color: var(--white-color);
+}
 
 .responsive:focus {
   border-color: var(--input-border-color);
   background: var(--input-bg-color);
+  color: var(--black-color);
 }
 
 .responsive.error {
@@ -26,13 +30,14 @@
 .responsive.error:focus {
   border-color: var(--input-error-border-color);
   background: var(--input-error-bg-color);
+  color: var(--black-color);
 }
 
 /* input field with icon */
 
 .input-field-icon {
   border: 1.5px solid var(--grey-color);
-  padding: 0.2rem 0.4rem;
+  padding: 0.5rem;
 }
 .input-field-icon.rounded-corner {
   border-radius: 0.5rem;
@@ -48,10 +53,13 @@
 .input-field-icon input {
   border: none;
   outline: none;
-  padding: 0.2rem 0.5rem;
+  padding: 0 0.5rem;
   font-size: inherit;
   flex-grow: 1;
   width: 100%;
+}
+.dark-theme .input-field-icon input {
+  color: var(--white-color);
 }
 .input-field-icon input {
   background: transparent;
@@ -59,6 +67,9 @@
 .responsive:focus-within {
   background: var(--input-bg-color);
   border-color: var(--input-border-color);
+}
+.responsive:focus-within input {
+  color: var(--black-color);
 }
 .responsive:focus-within label span {
   color: var(--input-border-color);
@@ -71,4 +82,11 @@
 
 .responsive.error:focus-within label span {
   color: var(--input-error-border-color);
+}
+
+@media only screen and (max-width: 450px) {
+  .input-field,
+  .input-field-icon {
+    border-width: 1px;
+  }
 }

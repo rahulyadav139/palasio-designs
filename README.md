@@ -6,8 +6,8 @@
 
 Now design your project faster and better with Palasio Designs
 
-![Forks](https://img.shields.io/github/forks/rahulyadav139/palasio-designs-component-library)
-![Stars](https://img.shields.io/github/stars/rahulyadav139/palasio-designs-component-library)
+![Forks](https://img.shields.io/github/forks/rahulyadav139/palasio-designs)
+![Stars](https://img.shields.io/github/stars/rahulyadav139/palasio-designs)
 
 </div>
 
@@ -179,6 +179,7 @@ You will find the following types of _Navigation_ on https://palasio-designs.net
 
 - Navigation Bar for E-commerce Website
 - Navigation Bar for Social Media Website
+- Navigation Bar with Hamburger Menu
 
 ---
 

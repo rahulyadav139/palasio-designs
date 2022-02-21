@@ -4,14 +4,14 @@ const btnSnackbar = document.querySelector('.snackbar-test');
 const snackbar = document.querySelector('.snackbar');
 
 btnTest.addEventListener('click', () => {
-  toast.classList.remove('hidden');
+  toast.classList.remove('hidden-toast');
   setTimeout(() => {
-    toast.classList.add('hidden');
+    toast.classList.add('hidden-toast');
   }, 1000);
 });
 
 btnSnackbar.addEventListener('click', () => {
-  snackbar.classList.remove('hidden');
+  snackbar.classList.remove('hidden-toast');
 });
 
 // dismiss snackbar
@@ -19,5 +19,5 @@ btnSnackbar.addEventListener('click', () => {
 document
   .querySelector('.btn-snackbar-dismiss')
   .addEventListener('click', () => {
-    snackbar.classList.add('hidden');
+    snackbar.classList.add('hidden-toast');
   });

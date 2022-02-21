@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../shared.css" />
     <link rel="stylesheet" href="../../documentation.css" />
 
-    <script defer src="./input.js"></script>
+    <script defer src="./navigation.js"></script>
     <script defer src="../../app.js"></script>
   </head>
   <body>
@@ -241,6 +241,173 @@
                       </div>
                     </li>
                   </ul>
+                </div>
+              </nav>
+            </script>
+          </div>
+        </div>
+
+        <h3 class="subtitle">Navigation with Hamburger Menu</h3>
+        <p class="paragraph">
+          This library also provides navigation bar with hamburger menu for
+          mobile view.To view hamburger navigation kindly view in mobile view.
+          View code snippet for the code.
+        </p>
+        <div class="component-container">
+          <div class="component-container__actions">
+            <button class="active component-container__actions__btn-live-demo">
+              Live Demo</button
+            ><button class="component-container__actions__btn-code-snippet">
+              Code Snippet
+            </button>
+          </div>
+          <div class="component-container__live-demo">
+            <!-- e-commerce website navigation -->
+            <nav class="nav-bar nav-bar-hamburger shadow">
+              <div class="hamburger-icon"><i class="bi bi-list"></i></div>
+              <a href="./index.html">
+                <div class="brand">
+                  <span class="brand__logo"
+                    ><i class="bi bi-hurricane"></i
+                  ></span>
+                  <span class="brand__text">PALASIO</span>
+                </div>
+              </a>
+
+              <div class="input-field-icon">
+                <label
+                  ><span class="icon small"><i class="bi bi-search"></i></span
+                  ><input placeholder="Search" type="text"
+                /></label>
+              </div>
+
+              <div>
+                <ul class="list-items">
+                  <!-- wishlist icon -->
+                  <li class="list-item">
+                    <div class="badge-container">
+                      <button class="btn icon medium primary badge-counter">
+                        <i class="fas fa-heart"></i>
+                      </button>
+                      <span class="badge-number">10</span>
+                    </div>
+                  </li>
+                  <!-- cart icon -->
+                  <li class="list-item">
+                    <a href="./cart.html">
+                      <div class="badge-container">
+                        <button class="btn icon medium primary badge-counter">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <span class="badge-number">10</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="login-item">
+                    <a href="./login.html"
+                      ><button class="btn-login btn primary text-bold">
+                        Login
+                      </button></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- hamburger menu -->
+              <div class="hamburger-menu__backdrop hidden"></div>
+              <div class="hamburger-menu hamburger-menu--hide">
+                <div class="brand">
+                  <span class="brand__logo"
+                    ><i class="bi bi-hurricane"></i
+                  ></span>
+                  <span class="brand__text">PALASIO LANE</span>
+                </div>
+                <div class="hr-line fad"></div>
+                <ul class="hamburger-menu__items">
+                  <li class="hamburger-menu__item">Home</li>
+                </ul>
+
+                <div class="btn-container">
+                  <button class="btn primary">Login</button>
+                  <button class="btn primary outline">Signup</button>
+                </div>
+                <div class="hr-line fad"></div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="component-container__code-snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+               <!-- e-commerce website navigation -->
+              <nav class="nav-bar nav-bar-hamburger shadow">
+                <div class="hamburger-icon"><i class="bi bi-list"></i></div>
+                <a href="./index.html">
+                  <div class="brand">
+                    <span class="brand__logo"
+                      ><i class="bi bi-hurricane"></i
+                    ></span>
+                    <span class="brand__text">PALASIO</span>
+                  </div>
+                </a>
+
+                <div class="input-field-icon">
+                  <label
+                    ><span class="icon small"><i class="bi bi-search"></i></span
+                    ><input placeholder="Search" type="text"
+                  /></label>
+                </div>
+
+                <div>
+                  <ul class="list-items">
+                    <!-- wishlist icon -->
+                    <li class="list-item">
+                      <div class="badge-container">
+                        <button class="btn icon medium primary badge-counter">
+                          <i class="fas fa-heart"></i>
+                        </button>
+                        <span class="badge-number">10</span>
+                      </div>
+                    </li>
+                    <!-- cart icon -->
+                    <li class="list-item">
+                      <a href="./cart.html">
+                        <div class="badge-container">
+                          <button class="btn icon medium primary badge-counter">
+                            <i class="fas fa-shopping-cart"></i>
+                          </button>
+                          <span class="badge-number">10</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="login-item">
+                      <a href="./login.html"
+                        ><button class="btn-login btn primary text-bold">
+                          Login
+                        </button></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- hamburger menu -->
+                <div class="hamburger-menu__backdrop hidden"></div>
+                <div class="hamburger-menu hamburger-menu--hide">
+                  <div class="brand">
+                    <span class="brand__logo"
+                      ><i class="bi bi-hurricane"></i
+                    ></span>
+                    <span class="brand__text">PALASIO LANE</span>
+                  </div>
+                  <div class="hr-line fad"></div>
+                  <ul class="hamburger-menu__items">
+                    <li class="hamburger-menu__item">Home</li>
+                  </ul>
+
+                  <div class="btn-container">
+                    <button class="btn primary">Login</button>
+                    <button class="btn primary outline">Signup</button>
+                  </div>
+                  <div class="hr-line fad"></div>
                 </div>
               </nav>
             </script>

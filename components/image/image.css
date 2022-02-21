@@ -3,6 +3,7 @@
   object-position: center;
   max-inline-size: 100%;
   block-size: auto;
+  display: block;
   height: 100%;
 }
 
