@@ -179,6 +179,7 @@ You will find the following types of _Navigation_ on https://palasio-designs.net
 
 - Navigation Bar for E-commerce Website
 - Navigation Bar for Social Media Website
+- Navigation Bar with Hamburger Menu
 
 ---
 

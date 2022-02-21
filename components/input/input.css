@@ -13,6 +13,9 @@
   border-color: var(--grey-color);
   background: transparent;
 }
+.dark-theme .input-field input {
+  color: var(--white-color);
+}
 
 .responsive:focus {
   border-color: var(--input-border-color);
@@ -53,6 +56,9 @@
   flex-grow: 1;
   width: 100%;
 }
+.dark-theme .input-field-icon input {
+  color: var(--white-color);
+}
 .input-field-icon input {
   background: transparent;
 }
@@ -71,4 +77,11 @@
 
 .responsive.error:focus-within label span {
   color: var(--input-error-border-color);
+}
+
+@media only screen and (max-width: 450px) {
+  .input-field,
+  .input-field-icon {
+    border-width: 1px;
+  }
 }
