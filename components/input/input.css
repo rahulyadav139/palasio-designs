@@ -13,13 +13,14 @@
   border-color: var(--grey-color);
   background: transparent;
 }
-.dark-theme .input-field input {
+.dark-theme .input-field {
   color: var(--white-color);
 }
 
 .responsive:focus {
   border-color: var(--input-border-color);
   background: var(--input-bg-color);
+  color: var(--black-color);
 }
 
 .responsive.error {
@@ -29,6 +30,7 @@
 .responsive.error:focus {
   border-color: var(--input-error-border-color);
   background: var(--input-error-bg-color);
+  color: var(--black-color);
 }
 
 /* input field with icon */
@@ -65,6 +67,9 @@
 .responsive:focus-within {
   background: var(--input-bg-color);
   border-color: var(--input-border-color);
+}
+.responsive:focus-within input {
+  color: var(--black-color);
 }
 .responsive:focus-within label span {
   color: var(--input-border-color);
