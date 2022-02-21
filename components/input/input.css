@@ -35,7 +35,7 @@
 
 .input-field-icon {
   border: 1.5px solid var(--grey-color);
-  padding: 0.2rem 0.4rem;
+  padding: 0.5rem;
 }
 .input-field-icon.rounded-corner {
   border-radius: 0.5rem;
@@ -51,7 +51,7 @@
 .input-field-icon input {
   border: none;
   outline: none;
-  padding: 0.2rem 0.5rem;
+  padding: 0 0.5rem;
   font-size: inherit;
   flex-grow: 1;
   width: 100%;
