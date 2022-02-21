@@ -6,8 +6,8 @@
 
 Now design your project faster and better with Palasio Designs
 
-![Forks](https://img.shields.io/github/forks/rahulyadav139/palasio-designs-component-library)
-![Stars](https://img.shields.io/github/stars/rahulyadav139/palasio-designs-component-library)
+![Forks](https://img.shields.io/github/forks/rahulyadav139/palasio-designs)
+![Stars](https://img.shields.io/github/stars/rahulyadav139/palasio-designs)
 
 </div>
 
